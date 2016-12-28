@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html class="nojs html css_verticalspacer" lang="en-US">
+ <head>
+
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+  <meta name="generator" content="2017.0.1.363"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <script type="text/javascript">
+   // Update the 'nojs'/'js' class on the html node
+document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
+
+// Check that all required assets are uploaded and up-to-date
+if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.musemenu.js", "jquery.watch.js", "jquery.museresponsive.js", "require.js", "jquery.scrolleffects.js", "safety.css"], "outOfDate":[]};
+</script>
+  
+  <title>Safety</title>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=4076139336"/>
+  <link rel="stylesheet" type="text/css" href="css/master_safety.css?crc=3902099605"/>
+  <link rel="stylesheet" type="text/css" href="css/safety.css?crc=4174020528" id="pagesheet"/>
+  <!-- IE-only CSS -->
+  <!--[if lt IE 9]>
+  <link rel="stylesheet" type="text/css" href="css/nomq_preview_master_safety.css?crc=3824530138"/>
+  <link rel="stylesheet" type="text/css" href="css/nomq_safety.css?crc=241440085" id="nomq_pagesheet"/>
+  <![endif]-->
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   var __adobewebfontsappname__ = "muse";
+</script>
+  <!-- JS includes -->
+  <script type="text/javascript">
+   document.write('\x3Cscript src="' + (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//webfonts.creativecloud.com/basic:n4:default.js" type="text/javascript">\x3C/script>');
+</script>
+  <!--[if lt IE 9]>
+  <script src="scripts/html5shiv.js?crc=4241844378" type="text/javascript"></script>
+  <![endif]-->
+    <!--HTML Widget code-->
+  
+		<style>
+		#overlaypass {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #cecece;
+			filter:alpha(opacity=50);
+			-moz-opacity:0.5;
+			-khtml-opacity: 0.5;
+			opacity: 1;
+			z-index: 9990000;
+			text-align:center;
+		}
+		.formLogin form{
+			width:95%;
+			max-width:250px;    
+			margin: 0 auto;	
+		}
+		.formLogin{
+			font: 95% Arial, Helvetica, sans-serif;
+			padding: 16px;
+			background: #F7F7F7;
+		}
+		.formLogin h1{
+			padding: 20px 0;
+			font-size: 140%;
+			font-weight: 300;
+			text-align: center;
+			color: #000;
+		}
+		.formLogin input[type="text"],
+		.formLogin input[type="date"],
+		.formLogin input[type="datetime"],
+		.formLogin input[type="password"],
+		.formLogin input[type="number"],
+		.formLogin input[type="search"],
+		.formLogin input[type="time"],
+		.formLogin input[type="url"],
+		.formLogin textarea,
+		.formLogin select
+		{
+			-webkit-transition: all 0.30s ease-in-out;
+			-moz-transition: all 0.30s ease-in-out;
+			-ms-transition: all 0.30s ease-in-out;
+			-o-transition: all 0.30s ease-in-out;
+			outline: none;
+			box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			width: 100%;
+			background: #fff;
+			margin-bottom: 4%;
+			border: 1px solid #ccc;
+			padding: 3%;
+			color: #555;
+			font: 95% Arial, Helvetica, sans-serif;
+		}
+		.formLogin input[type="text"]:focus,
+		.formLogin input[type="date"]:focus,
+		.formLogin input[type="datetime"]:focus,
+		.formLogin input[type="password"]:focus,
+		.formLogin input[type="number"]:focus,
+		.formLogin input[type="search"]:focus,
+		.formLogin input[type="time"]:focus,
+		.formLogin input[type="url"]:focus,
+		.formLogin textarea:focus,
+		.formLogin select:focus
+		{
+			box-shadow: 0 0 5px #43D1AF;
+			padding: 3%;
+			border: 1px solid #43D1AF;
+		}
+		.formLogin input[type="submit"],
+		.formLogin input[type="button"]{
+			box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			width: 100%;
+			padding: 3%;
+			background: #43D1AF;
+			border-bottom: 2px solid #30C29E;
+			border-top-style: none;
+			border-right-style: none;
+			border-left-style: none;   
+			color: #fff;
+		}
+		.formLogin input[type="submit"]:hover,
+		.formLogin input[type="button"]:hover{
+			background: #2EBC99;
+		}
+		#botonlogin, #pass{
+			font-size: 140%;	
+		}
+		#err{
+			color:red;
+		}
+		</style>
+		<div id="overlaypass" class="formLogin">
+			<form>
+			<h1>ENTER PASSWORD TO CONTINUE</h1>
+				<input type="password" id="pass">
+				<input type="submit" id="botonlogin" value="LOGIN">
+				<p style="margin-top: 30px;"><span id='err'></span></p>
+			</form>
+		</div>
+		
+
+<style>
+html, body {overflow-x: hidden !important;}   
+   
+</style>
+
+
+
+<style type="text/css">
+ #u26118 { background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAAA+CAIAAADVpMCUAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpkZWRmN2NiOS1lNjEzLTQ0NDgtYjZmMi0xMzkwZmM1MzEzMWQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QkU5RjIwNUI3QjRGMTFFNDlGRDY4MEMxMTc5MjQxMzgiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QkU5RjIwNUE3QjRGMTFFNDlGRDY4MEMxMTc5MjQxMzgiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpjZTA4MGIzOS1hOTQ2LTRhOGEtOWZiMi1lZWFhY2U0MmQ0MmUiIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDo1M2UzYjdlMC1jMzliLTExNzctYWJj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"); background-repeat: no-repeat;background-size: contain;top: -4300px;
+  
+ 
+ 
+</style>
+
+
+
+
+	
+ </head>
+ <body>
+
+  <div class="breakpoint active" id="bp_infinity" data-min-width="1441"><!-- responsive breakpoint node -->
+   <div class="clearfix" id="page"><!-- column -->
+    <div class="position_content" id="page_position_content">
+     <div class="browser_width colelem" id="menuu16391-bw">
+      <nav class="MenuBar clearfix" id="menuu16391"><!-- horizontal box -->
+       <div class="MenuItemContainer borderbox clearfix grpelem" id="u16399"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem" id="u16400" href="index.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u16401-4"><!-- rasterized frame --><div id="u16401-4_clip"><img class="temp_no_img_src" alt="Home" width="226" data-orig-src="images/u16401-4.png?crc=4266465865" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem" id="u16392"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem" id="u16393" href="education.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u16394-4"><!-- rasterized frame --><div id="u16394-4_clip"><img class="temp_no_img_src" alt="Education" width="227" data-orig-src="images/u16394-4.png?crc=81486677" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem" id="u16511"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox clearfix colelem" id="u16512" href="safety.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u16514-4"><!-- rasterized frame --><div id="u16514-4_clip"><img class="temp_no_img_src" alt="Safety" width="227" data-orig-src="images/u16514-4.png?crc=4064490150" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem" id="u16620"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem" id="u16623" href="transportation.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u16625-4"><!-- rasterized frame --><div id="u16625-4_clip"><img class="temp_no_img_src" alt="Transportation" width="227" data-orig-src="images/u16625-4.png?crc=135862320" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem" id="u16718"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem" id="u16721" href="recreation.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u16722-4"><!-- rasterized frame --><div id="u16722-4_clip"><img class="temp_no_img_src" alt="Recreation" width="227" data-orig-src="images/u16722-4.png?crc=176630049" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem" id="u16816"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem" id="u16817" href="utilities.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u16819-4"><!-- rasterized frame --><div id="u16819-4_clip"><img class="temp_no_img_src" alt="Utilities" width="227" data-orig-src="images/u16819-4.png?crc=434650784" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem" id="u16914"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem" id="u16915" href="map.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u16917-4"><!-- rasterized frame --><div id="u16917-4_clip"><img class="temp_no_img_src" alt="Map" width="227" data-orig-src="images/u16917-4.png?crc=362852897" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+      </nav>
+     </div>
+     <div class="clearfix colelem" id="pu25079"><!-- group -->
+      <div class="grpelem shared_content" id="u25079" data-content-guid="u25079_content"><!-- content --></div>
+      <div class="clearfix grpelem shared_content" id="u25080-4" data-content-guid="u25080-4_content"><!-- content -->
+       <p id="u25080-2">Safety</p>
+      </div>
+     </div>
+     <div class="clearfix colelem" id="pu25082"><!-- group -->
+      <div class="clip_frame grpelem" id="u25082"><!-- image -->
+       <img class="block temp_no_img_src" id="u25082_img" data-orig-src="images/safety-together.png?crc=4187098763" alt="" width="600" height="600" src="images/blank.gif?crc=4208392903"/>
+      </div>
+      <div class="grpelem shared_content" id="u25081" data-content-guid="u25081_content"><!-- content --></div>
+      <div class="clearfix grpelem shared_content" id="u25085-3" data-content-guid="u25085-3_content"><!-- content -->
+       <p>&nbsp;</p>
+      </div>
+      <div class="size_fixed grpelem shared_content" id="u27958" data-content-guid="u27958_content"><!-- custom html -->
+      </div>
+     </div>
+     <div class="clearfix colelem" id="pu25078"><!-- group -->
+      <div class="browser_width grpelem" id="u25078-bw">
+       <div id="u25078"><!-- column -->
+        <div class="clearfix" id="u25078_align_to_page">
+         <div class="position_content" id="u25078_position_content">
+          <div class="clearfix colelem" id="pu25084"><!-- group -->
+           <div class="grpelem shared_content" id="u25084" data-content-guid="u25084_content"><!-- content --></div>
+           <div class="clearfix grpelem shared_content" id="u27736-4" data-content-guid="u27736-4_content"><!-- content -->
+            <p id="u27736-2">Fire</p>
+           </div>
+          </div>
+          <div class="clearfix colelem shared_content" id="u27727-3" data-content-guid="u27727-3_content"><!-- content -->
+           <p>&nbsp;</p>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="grpelem shared_content" id="u25088" data-content-guid="u25088_content"><!-- content --></div>
+      <div class="size_fixed grpelem shared_content" id="u26118" data-content-guid="u26118_content"><!-- custom html -->
+       
+ 
+<!--
+ 
+  ________  ________  ________  ________  _______   _______       ________  ________  _____ ______      
+|\   __  \|\   __  \|\   __  \|\   __  \|\  ___ \ |\  ___ \     |\   ____\|\   __  \|\   _ \  _   \    
+\ \  \|\  \ \  \|\  \ \  \|\  \ \  \|\  \ \   __/|\ \   __/|    \ \  \___|\ \  \|\  \ \  \\\__\ \  \   
+ \ \  \\\  \ \  \\\  \ \  \\\  \ \  \\\  \ \  \_|/_\ \  \_|/__   \ \  \    \ \  \\\  \ \  \\|__| \  \  
+  \ \  \\\  \ \  \\\  \ \  \\\  \ \  \\\  \ \  \_|\ \ \  \_|\ \ __\ \  \____\ \  \\\  \ \  \    \ \  \ 
+   \ \_____  \ \_______\ \_______\ \_____  \ \_______\ \_______\\__\ \_______\ \_______\ \__\    \ \__\
+    \|___| \__\|_______|\|_______|\|___| \__\|_______|\|_______\|__|\|_______|\|_______|\|__|     \|__|
+          \|__|                         \|__|                                                          
+-->
+
+
+
+      </div>
+     </div>
+     <div class="clip_frame mse_pre_init" id="u25086"><!-- image -->
+      <img class="block temp_no_img_src" id="u25086_img" data-orig-src="images/fire%20truck856x500.png?crc=125175911" alt="" width="856" height="500" src="images/blank.gif?crc=4208392903"/>
+     </div>
+     <div class="clearfix colelem" id="pu25089"><!-- group -->
+      <div class="browser_width grpelem" id="u25089-bw">
+       <div id="u25089"><!-- column -->
+        <div class="clearfix" id="u25089_align_to_page">
+         <div class="position_content" id="u25089_position_content">
+          <div class="clearfix colelem" id="pu26393"><!-- group -->
+           <div class="grpelem shared_content" id="u26393" data-content-guid="u26393_content"><!-- content --></div>
+           <div class="clearfix grpelem shared_content" id="u27757-4" data-content-guid="u27757-4_content"><!-- content -->
+            <p id="u27757-2">Medical</p>
+           </div>
+          </div>
+          <div class="clearfix colelem" id="pu26414"><!-- group -->
+           <div class="clip_frame ose_pre_init grpelem shared_content" id="u26414" data-content-guid="u26414_content"><!-- image -->
+            <img class="block temp_no_img_src" id="u26414_img" data-orig-src="images/medic.png?crc=380583144" alt="" width="500" height="500" src="images/blank.gif?crc=4208392903"/>
+           </div>
+           <div class="grpelem shared_content" id="u25090" data-content-guid="u25090_content"><!-- content --></div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <img class="ose_pre_init grpelem temp_no_img_src" id="u27020-6" alt="&nbsp;" width="800" height="700" data-orig-src="images/u27020-6.png?crc=321104155" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
+      <div class="grpelem shared_content" id="u27443" data-content-guid="u27443_content"><!-- content --></div>
+     </div>
+     <div class="clearfix colelem" id="pu26458"><!-- group -->
+      <div class="browser_width grpelem" id="u26458-bw">
+       <div id="u26458"><!-- group -->
+        <div class="clearfix" id="u26458_align_to_page">
+         <div class="grpelem shared_content" id="u26479" data-content-guid="u26479_content"><!-- content --></div>
+        </div>
+       </div>
+      </div>
+      <div class="grpelem shared_content" id="u26500" data-content-guid="u26500_content"><!-- content --></div>
+      <div class="clearfix grpelem shared_content" id="u27815-4" data-content-guid="u27815-4_content"><!-- content -->
+       <p id="u27815-2">Police</p>
+      </div>
+     </div>
+     <div class="clip_frame mse_pre_init shared_content" id="u26436" data-content-guid="u26436_content"><!-- image -->
+      <img class="block temp_no_img_src" id="u26436_img" data-orig-src="images/police%20car.png?crc=507669987" alt="" width="952" height="500" src="images/blank.gif?crc=4208392903"/>
+     </div>
+     <div class="verticalspacer" data-offset-top="3470" data-content-above-spacer="3469" data-content-below-spacer="1"></div>
+    </div>
+   </div>
+  </div>
+  <div class="breakpoint" id="bp_1440" data-min-width="1281" data-max-width="1440"><!-- responsive breakpoint node -->
+   <div class="clearfix temp_no_id" data-orig-id="page"><!-- group -->
+    <div class="clearfix grpelem" id="pmenuu16391"><!-- column -->
+     <div class="browser_width colelem temp_no_id" data-orig-id="menuu16391-bw">
+      <nav class="MenuBar clearfix temp_no_id" data-orig-id="menuu16391"><!-- horizontal box -->
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16399"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="index.html" data-orig-id="u16400"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16401-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16401-4_clip"><img class="temp_no_img_src" alt="Home" width="204" data-orig-src="images/u16401-4.png?crc=4266465865" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16392"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="education.html" data-orig-id="u16393"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16394-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16394-4_clip"><img class="temp_no_img_src" alt="Education" width="204" data-orig-src="images/u16394-4.png?crc=81486677" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16511"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox clearfix colelem temp_no_id" href="safety.html" data-orig-id="u16512"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16514-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16514-4_clip"><img class="temp_no_img_src" alt="Safety" width="204" data-orig-src="images/u16514-4.png?crc=4064490150" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16620"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="transportation.html" data-orig-id="u16623"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16625-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16625-4_clip"><img class="temp_no_img_src" alt="Transportation" width="204" data-orig-src="images/u16625-4.png?crc=135862320" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16718"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="recreation.html" data-orig-id="u16721"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16722-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16722-4_clip"><img class="temp_no_img_src" alt="Recreation" width="204" data-orig-src="images/u16722-4.png?crc=176630049" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16816"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="utilities.html" data-orig-id="u16817"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16819-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16819-4_clip"><img class="temp_no_img_src" alt="Utilities" width="204" data-orig-src="images/u16819-4.png?crc=434650784" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16914"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="map.html" data-orig-id="u16915"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16917-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16917-4_clip"><img class="temp_no_img_src" alt="Map" width="204" data-orig-src="images/u16917-4.png?crc=362852897" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+      </nav>
+     </div>
+     <div class="clearfix colelem temp_no_id" data-orig-id="pu25079"><!-- group -->
+      <span class="grpelem placeholder" data-placeholder-for="u25079_content"><!-- placeholder node --></span>
+      <span class="clearfix grpelem placeholder" data-placeholder-for="u25080-4_content"><!-- placeholder node --></span>
+      <span class="grpelem placeholder" data-placeholder-for="u25081_content"><!-- placeholder node --></span>
+      <div class="clip_frame grpelem temp_no_id" data-orig-id="u25082"><!-- image -->
+       <img class="block temp_no_id temp_no_img_src" data-orig-src="images/safety-together.png?crc=4187098763" alt="" width="622" height="622" data-orig-id="u25082_img" src="images/blank.gif?crc=4208392903"/>
+      </div>
+      <span class="grpelem placeholder" data-placeholder-for="u25084_content"><!-- placeholder node --></span>
+      <span class="clearfix grpelem placeholder" data-placeholder-for="u25085-3_content"><!-- placeholder node --></span>
+      <span class="grpelem placeholder" data-placeholder-for="u25088_content"><!-- placeholder node --></span>
+      <span class="grpelem placeholder" data-placeholder-for="u25090_content"><!-- placeholder node --></span>
+      <span class="grpelem placeholder" data-placeholder-for="u26393_content"><!-- placeholder node --></span>
+      <span class="grpelem placeholder" data-placeholder-for="u26479_content"><!-- placeholder node --></span>
+      <span class="grpelem placeholder" data-placeholder-for="u26500_content"><!-- placeholder node --></span>
+      <span class="clearfix grpelem placeholder" data-placeholder-for="u27736-4_content"><!-- placeholder node --></span>
+      <span class="clearfix grpelem placeholder" data-placeholder-for="u27757-4_content"><!-- placeholder node --></span>
+      <span class="clearfix grpelem placeholder" data-placeholder-for="u27815-4_content"><!-- placeholder node --></span>
+     </div>
+     <div class="clearfix colelem temp_no_id" data-orig-id="pu26458"><!-- group -->
+      <div class="browser_width grpelem temp_no_id shared_content" data-orig-id="u26458-bw" data-content-guid="u26458-bw_content">
+       <div class="temp_no_id" data-orig-id="u26458"><!-- simple frame --></div>
+      </div>
+      <div class="browser_width grpelem temp_no_id shared_content" data-orig-id="u25078-bw" data-content-guid="u25078-bw_content">
+       <div class="temp_no_id" data-orig-id="u25078"><!-- group -->
+        <div class="clearfix temp_no_id" data-orig-id="u25078_align_to_page">
+         <div class="clip_frame grpelem temp_no_id" data-orig-id="u25086"><!-- image -->
+          <img class="block temp_no_id temp_no_img_src" data-orig-src="images/fire%20truck.png?crc=46744821" alt="" width="1200" height="701" data-orig-id="u25086_img" src="images/blank.gif?crc=4208392903"/>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="browser_width grpelem temp_no_id" data-orig-id="u25089-bw">
+       <div class="temp_no_id" data-orig-id="u25089"><!-- group -->
+        <div class="clearfix temp_no_id" data-orig-id="u25089_align_to_page">
+         <span class="clip_frame ose_pre_init grpelem placeholder" data-placeholder-for="u26414_content"><!-- placeholder node --></span>
+         <img class="ose_pre_init grpelem temp_no_id temp_no_img_src" alt="&nbsp;" width="800" height="700" data-orig-src="images/u27020-62.png?crc=321104155" data-orig-id="u27020-6" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
+        </div>
+       </div>
+      </div>
+      <span class="clearfix grpelem placeholder" data-placeholder-for="u27727-3_content"><!-- placeholder node --></span>
+     </div>
+    </div>
+    <span class="clip_frame mse_pre_init placeholder" data-placeholder-for="u26436_content"><!-- placeholder node --></span>
+    <span class="size_fixed grpelem placeholder" data-placeholder-for="u27958_content"><!-- placeholder node --></span>
+    <div class="clearfix grpelem" id="pu27443"><!-- column -->
+     <span class="colelem placeholder" data-placeholder-for="u27443_content"><!-- placeholder node --></span>
+     <span class="size_fixed colelem placeholder" data-placeholder-for="u26118_content"><!-- placeholder node --></span>
+    </div>
+    <div class="verticalspacer" data-offset-top="3360" data-content-above-spacer="2527" data-content-below-spacer="0"></div>
+   </div>
+  </div>
+  <div class="breakpoint" id="bp_1280" data-min-width="1025" data-max-width="1280"><!-- responsive breakpoint node -->
+   <div class="clearfix temp_no_id" data-orig-id="page"><!-- column -->
+    <div class="position_content temp_no_id" data-orig-id="page_position_content">
+     <div class="browser_width colelem temp_no_id" data-orig-id="menuu16391-bw">
+      <nav class="MenuBar clearfix temp_no_id" data-orig-id="menuu16391"><!-- horizontal box -->
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16399"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="index.html" data-orig-id="u16400"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16401-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16401-4_clip"><img class="temp_no_img_src" alt="Home" width="181" data-orig-src="images/u16401-4.png?crc=4266465865" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16392"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="education.html" data-orig-id="u16393"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16394-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16394-4_clip"><img class="temp_no_img_src" alt="Education" width="181" data-orig-src="images/u16394-4.png?crc=81486677" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16511"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox clearfix colelem temp_no_id" href="safety.html" data-orig-id="u16512"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16514-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16514-4_clip"><img class="temp_no_img_src" alt="Safety" width="181" data-orig-src="images/u16514-4.png?crc=4064490150" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16620"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="transportation.html" data-orig-id="u16623"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16625-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16625-4_clip"><img class="temp_no_img_src" alt="Transportation" width="181" data-orig-src="images/u16625-4.png?crc=135862320" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16718"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="recreation.html" data-orig-id="u16721"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16722-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16722-4_clip"><img class="temp_no_img_src" alt="Recreation" width="181" data-orig-src="images/u16722-4.png?crc=176630049" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16816"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="utilities.html" data-orig-id="u16817"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16819-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16819-4_clip"><img class="temp_no_img_src" alt="Utilities" width="181" data-orig-src="images/u16819-4.png?crc=434650784" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16914"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="map.html" data-orig-id="u16915"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16917-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16917-4_clip"><img class="temp_no_img_src" alt="Map" width="182" data-orig-src="images/u16917-4.png?crc=362852897" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+      </nav>
+     </div>
+     <div class="clearfix colelem shared_content" id="pu27958" data-content-guid="pu27958_content"><!-- group -->
+      <span class="size_fixed grpelem placeholder" data-placeholder-for="u27958_content"><!-- placeholder node --></span>
+      <span class="grpelem placeholder" data-placeholder-for="u25079_content"><!-- placeholder node --></span>
+      <span class="clearfix grpelem placeholder" data-placeholder-for="u25080-4_content"><!-- placeholder node --></span>
+      <span class="grpelem placeholder" data-placeholder-for="u25081_content"><!-- placeholder node --></span>
+      <div class="clip_frame grpelem temp_no_id" data-orig-id="u25082"><!-- image -->
+       <img class="block temp_no_id temp_no_img_src" data-orig-src="images/safety-together.png?crc=4187098763" alt="" width="498" height="498" data-orig-id="u25082_img" src="images/blank.gif?crc=4208392903"/>
+      </div>
+      <span class="grpelem placeholder" data-placeholder-for="u25084_content"><!-- placeholder node --></span>
+      <span class="clearfix grpelem placeholder" data-placeholder-for="u25085-3_content"><!-- placeholder node --></span>
+      <span class="grpelem placeholder" data-placeholder-for="u25088_content"><!-- placeholder node --></span>
+      <span class="grpelem placeholder" data-placeholder-for="u25090_content"><!-- placeholder node --></span>
+      <span class="grpelem placeholder" data-placeholder-for="u26393_content"><!-- placeholder node --></span>
+      <span class="grpelem placeholder" data-placeholder-for="u26479_content"><!-- placeholder node --></span>
+      <span class="grpelem placeholder" data-placeholder-for="u26500_content"><!-- placeholder node --></span>
+      <span class="grpelem placeholder" data-placeholder-for="u27443_content"><!-- placeholder node --></span>
+      <span class="clearfix grpelem placeholder" data-placeholder-for="u27736-4_content"><!-- placeholder node --></span>
+      <span class="clearfix grpelem placeholder" data-placeholder-for="u27757-4_content"><!-- placeholder node --></span>
+      <span class="clearfix grpelem placeholder" data-placeholder-for="u27815-4_content"><!-- placeholder node --></span>
+     </div>
+     <div class="clearfix colelem temp_no_id" data-orig-id="pu26458"><!-- group -->
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u26458-bw_content"><!-- placeholder node --></span>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u25078-bw_content"><!-- placeholder node --></span>
+      <div class="browser_width grpelem temp_no_id" data-orig-id="u25089-bw">
+       <div class="temp_no_id" data-orig-id="u25089"><!-- group -->
+        <div class="clearfix temp_no_id" data-orig-id="u25089_align_to_page">
+         <span class="clearfix grpelem placeholder" data-placeholder-for="u27727-3_content"><!-- placeholder node --></span>
+        </div>
+       </div>
+      </div>
+      <span class="size_fixed grpelem placeholder" data-placeholder-for="u26118_content"><!-- placeholder node --></span>
+     </div>
+     <div class="clearfix colelem temp_no_id" data-orig-id="pu26414"><!-- group -->
+      <span class="clip_frame ose_pre_init grpelem placeholder" data-placeholder-for="u26414_content"><!-- placeholder node --></span>
+      <img class="ose_pre_init grpelem temp_no_id temp_no_img_src" alt="&nbsp;" width="800" height="700" data-orig-src="images/u27020-63.png?crc=321104155" data-orig-id="u27020-6" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
+     </div>
+     <span class="clip_frame mse_pre_init placeholder" data-placeholder-for="u26436_content"><!-- placeholder node --></span>
+     <div class="verticalspacer shared_content" data-offset-top="3360" data-content-above-spacer="2559" data-content-below-spacer="800" data-content-guid="page_position_content_5_content"></div>
+    </div>
+   </div>
+  </div>
+  <div class="breakpoint" id="bp_1024" data-min-width="961" data-max-width="1024"><!-- responsive breakpoint node -->
+   <div class="clearfix temp_no_id" data-orig-id="page"><!-- column -->
+    <div class="position_content temp_no_id" data-orig-id="page_position_content">
+     <div class="browser_width colelem temp_no_id" data-orig-id="menuu16391-bw">
+      <nav class="MenuBar clearfix temp_no_id" data-orig-id="menuu16391"><!-- horizontal box -->
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16399"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="index.html" data-orig-id="u16400"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16401-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16401-4_clip"><img class="temp_no_img_src" alt="Home" width="144" data-orig-src="images/u16401-4.png?crc=4266465865" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16392"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="education.html" data-orig-id="u16393"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16394-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16394-4_clip"><img class="temp_no_img_src" alt="Education" width="144" data-orig-src="images/u16394-4.png?crc=81486677" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16511"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox clearfix colelem temp_no_id" href="safety.html" data-orig-id="u16512"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16514-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16514-4_clip"><img class="temp_no_img_src" alt="Safety" width="144" data-orig-src="images/u16514-4.png?crc=4064490150" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16620"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="transportation.html" data-orig-id="u16623"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16625-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16625-4_clip"><img class="temp_no_img_src" alt="Transportation" width="145" data-orig-src="images/u16625-4.png?crc=135862320" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16718"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="recreation.html" data-orig-id="u16721"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16722-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16722-4_clip"><img class="temp_no_img_src" alt="Recreation" width="145" data-orig-src="images/u16722-4.png?crc=176630049" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16816"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="utilities.html" data-orig-id="u16817"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16819-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16819-4_clip"><img class="temp_no_img_src" alt="Utilities" width="145" data-orig-src="images/u16819-4.png?crc=434650784" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16914"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="map.html" data-orig-id="u16915"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16917-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16917-4_clip"><img class="temp_no_img_src" alt="Map" width="145" data-orig-src="images/u16917-4.png?crc=362852897" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+      </nav>
+     </div>
+     <span class="clearfix colelem placeholder" data-placeholder-for="pu27958_content"><!-- placeholder node --></span>
+     <div class="clearfix colelem temp_no_id" data-orig-id="pu26458"><!-- group -->
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u26458-bw_content"><!-- placeholder node --></span>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u25078-bw_content"><!-- placeholder node --></span>
+      <div class="browser_width grpelem temp_no_id" data-orig-id="u25089-bw">
+       <div class="temp_no_id" data-orig-id="u25089"><!-- group -->
+        <div class="clearfix temp_no_id" data-orig-id="u25089_align_to_page">
+         <span class="clearfix grpelem placeholder" data-placeholder-for="u27727-3_content"><!-- placeholder node --></span>
+        </div>
+       </div>
+      </div>
+      <span class="size_fixed grpelem placeholder" data-placeholder-for="u26118_content"><!-- placeholder node --></span>
+     </div>
+     <div class="clearfix colelem temp_no_id" data-orig-id="pu26414"><!-- group -->
+      <span class="clip_frame ose_pre_init grpelem placeholder" data-placeholder-for="u26414_content"><!-- placeholder node --></span>
+      <img class="ose_pre_init grpelem temp_no_id temp_no_img_src" alt="&nbsp;" width="800" height="700" data-orig-src="images/u27020-64.png?crc=321104155" data-orig-id="u27020-6" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
+     </div>
+     <span class="clip_frame mse_pre_init placeholder" data-placeholder-for="u26436_content"><!-- placeholder node --></span>
+     <span class="verticalspacer placeholder" data-placeholder-for="page_position_content_5_content"><!-- placeholder node --></span>
+    </div>
+   </div>
+  </div>
+  <div class="breakpoint" id="bp_960" data-min-width="841" data-max-width="960"><!-- responsive breakpoint node -->
+   <div class="clearfix temp_no_id" data-orig-id="page"><!-- column -->
+    <div class="position_content temp_no_id" data-orig-id="page_position_content">
+     <div class="clearfix colelem temp_no_id" data-orig-id="pmenuu16391"><!-- group -->
+      <div class="browser_width grpelem temp_no_id" data-orig-id="menuu16391-bw">
+       <nav class="MenuBar clearfix temp_no_id" data-orig-id="menuu16391"><!-- horizontal box -->
+        <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16399"><!-- vertical box -->
+         <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="index.html" data-orig-id="u16400"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16401-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16401-4_clip"><img class="temp_no_img_src" alt="Home" width="135" data-orig-src="images/u16401-4.png?crc=4266465865" src="images/blank.gif?crc=4208392903"/></div></div></a>
+        </div>
+        <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16392"><!-- vertical box -->
+         <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="education.html" data-orig-id="u16393"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16394-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16394-4_clip"><img class="temp_no_img_src" alt="Education" width="135" data-orig-src="images/u16394-4.png?crc=81486677" src="images/blank.gif?crc=4208392903"/></div></div></a>
+        </div>
+        <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16511"><!-- vertical box -->
+         <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox clearfix colelem temp_no_id" href="safety.html" data-orig-id="u16512"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16514-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16514-4_clip"><img class="temp_no_img_src" alt="Safety" width="135" data-orig-src="images/u16514-4.png?crc=4064490150" src="images/blank.gif?crc=4208392903"/></div></div></a>
+        </div>
+        <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16620"><!-- vertical box -->
+         <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="transportation.html" data-orig-id="u16623"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16625-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16625-4_clip"><img class="temp_no_img_src" alt="Transportation" width="135" data-orig-src="images/u16625-4.png?crc=135862320" src="images/blank.gif?crc=4208392903"/></div></div></a>
+        </div>
+        <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16718"><!-- vertical box -->
+         <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="recreation.html" data-orig-id="u16721"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16722-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16722-4_clip"><img class="temp_no_img_src" alt="Recreation" width="136" data-orig-src="images/u16722-4.png?crc=176630049" src="images/blank.gif?crc=4208392903"/></div></div></a>
+        </div>
+        <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16816"><!-- vertical box -->
+         <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="utilities.html" data-orig-id="u16817"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16819-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16819-4_clip"><img class="temp_no_img_src" alt="Utilities" width="136" data-orig-src="images/u16819-4.png?crc=434650784" src="images/blank.gif?crc=4208392903"/></div></div></a>
+        </div>
+        <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16914"><!-- vertical box -->
+         <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="map.html" data-orig-id="u16915"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16917-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16917-4_clip"><img class="temp_no_img_src" alt="Map" width="136" data-orig-src="images/u16917-4.png?crc=362852897" src="images/blank.gif?crc=4208392903"/></div></div></a>
+        </div>
+       </nav>
+      </div>
+      <span class="size_fixed grpelem placeholder" data-placeholder-for="u27958_content"><!-- placeholder node --></span>
+     </div>
+     <div class="clearfix colelem temp_no_id" data-orig-id="pu25079"><!-- group -->
+      <span class="grpelem placeholder" data-placeholder-for="u25079_content"><!-- placeholder node --></span>
+      <span class="clearfix grpelem placeholder" data-placeholder-for="u25080-4_content"><!-- placeholder node --></span>
+      <span class="grpelem placeholder" data-placeholder-for="u25081_content"><!-- placeholder node --></span>
+      <div class="clip_frame grpelem temp_no_id" data-orig-id="u25082"><!-- image -->
+       <img class="block temp_no_id temp_no_img_src" data-orig-src="images/safety-together409x409.png?crc=4262923821" alt="" width="408" height="408" data-orig-id="u25082_img" src="images/blank.gif?crc=4208392903"/>
+      </div>
+      <span class="grpelem placeholder" data-placeholder-for="u25084_content"><!-- placeholder node --></span>
+      <span class="clearfix grpelem placeholder" data-placeholder-for="u25085-3_content"><!-- placeholder node --></span>
+      <span class="grpelem placeholder" data-placeholder-for="u25088_content"><!-- placeholder node --></span>
+      <span class="grpelem placeholder" data-placeholder-for="u25090_content"><!-- placeholder node --></span>
+      <span class="grpelem placeholder" data-placeholder-for="u26393_content"><!-- placeholder node --></span>
+      <span class="grpelem placeholder" data-placeholder-for="u26479_content"><!-- placeholder node --></span>
+      <span class="grpelem placeholder" data-placeholder-for="u26500_content"><!-- placeholder node --></span>
+      <span class="grpelem placeholder" data-placeholder-for="u27443_content"><!-- placeholder node --></span>
+      <span class="clearfix grpelem placeholder" data-placeholder-for="u27736-4_content"><!-- placeholder node --></span>
+      <span class="clearfix grpelem placeholder" data-placeholder-for="u27757-4_content"><!-- placeholder node --></span>
+      <span class="clearfix grpelem placeholder" data-placeholder-for="u27815-4_content"><!-- placeholder node --></span>
+     </div>
+     <div class="clearfix colelem temp_no_id" data-orig-id="pu26458"><!-- group -->
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u26458-bw_content"><!-- placeholder node --></span>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u25078-bw_content"><!-- placeholder node --></span>
+      <div class="browser_width grpelem temp_no_id" data-orig-id="u25089-bw">
+       <div class="temp_no_id" data-orig-id="u25089"><!-- group -->
+        <div class="clearfix temp_no_id" data-orig-id="u25089_align_to_page">
+         <span class="clearfix grpelem placeholder" data-placeholder-for="u27727-3_content"><!-- placeholder node --></span>
+        </div>
+       </div>
+      </div>
+      <span class="size_fixed grpelem placeholder" data-placeholder-for="u26118_content"><!-- placeholder node --></span>
+     </div>
+     <div class="clearfix colelem temp_no_id" data-orig-id="pu26414"><!-- group -->
+      <span class="clip_frame ose_pre_init grpelem placeholder" data-placeholder-for="u26414_content"><!-- placeholder node --></span>
+      <img class="ose_pre_init grpelem temp_no_id temp_no_img_src" alt="&nbsp;" width="800" height="700" data-orig-src="images/u27020-65.png?crc=321104155" data-orig-id="u27020-6" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
+     </div>
+     <span class="clip_frame mse_pre_init placeholder" data-placeholder-for="u26436_content"><!-- placeholder node --></span>
+     <span class="verticalspacer placeholder" data-placeholder-for="page_position_content_5_content"><!-- placeholder node --></span>
+    </div>
+   </div>
+  </div>
+  <div class="breakpoint" id="bp_840" data-min-width="721" data-max-width="840"><!-- responsive breakpoint node -->
+   <div class="clearfix temp_no_id" data-orig-id="page"><!-- column -->
+    <div class="position_content temp_no_id" data-orig-id="page_position_content">
+     <div class="browser_width colelem temp_no_id" data-orig-id="menuu16391-bw">
+      <nav class="MenuBar clearfix temp_no_id" data-orig-id="menuu16391"><!-- horizontal box -->
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16399"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="index.html" data-orig-id="u16400"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16401-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16401-4_clip"><img class="temp_no_img_src" alt="Home" width="118" data-orig-src="images/u16401-4.png?crc=4266465865" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16392"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="education.html" data-orig-id="u16393"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16394-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16394-4_clip"><img class="temp_no_img_src" alt="Education" width="118" data-orig-src="images/u16394-4.png?crc=81486677" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16511"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox clearfix colelem temp_no_id" href="safety.html" data-orig-id="u16512"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16514-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16514-4_clip"><img class="temp_no_img_src" alt="Safety" width="118" data-orig-src="images/u16514-4.png?crc=4064490150" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16620"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="transportation.html" data-orig-id="u16623"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16625-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16625-4_clip"><img class="temp_no_img_src" alt="Transportation" width="118" data-orig-src="images/u16625-4.png?crc=135862320" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16718"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="recreation.html" data-orig-id="u16721"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16722-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16722-4_clip"><img class="temp_no_img_src" alt="Recreation" width="118" data-orig-src="images/u16722-4.png?crc=176630049" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16816"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="utilities.html" data-orig-id="u16817"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16819-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16819-4_clip"><img class="temp_no_img_src" alt="Utilities" width="119" data-orig-src="images/u16819-4.png?crc=434650784" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16914"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="map.html" data-orig-id="u16915"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16917-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16917-4_clip"><img class="temp_no_img_src" alt="Map" width="119" data-orig-src="images/u16917-4.png?crc=362852897" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+      </nav>
+     </div>
+     <div class="clearfix colelem temp_no_id" data-orig-id="pu27958"><!-- group -->
+      <span class="size_fixed grpelem placeholder" data-placeholder-for="u27958_content"><!-- placeholder node --></span>
+      <span class="grpelem placeholder" data-placeholder-for="u25079_content"><!-- placeholder node --></span>
+      <span class="clearfix grpelem placeholder" data-placeholder-for="u25080-4_content"><!-- placeholder node --></span>
+      <span class="grpelem placeholder" data-placeholder-for="u25081_content"><!-- placeholder node --></span>
+      <div class="clip_frame grpelem temp_no_id" data-orig-id="u25082"><!-- image -->
+       <img class="block temp_no_id temp_no_img_src" data-orig-src="images/safety-together350x350.png?crc=4204795204" alt="" width="350" height="350" data-orig-id="u25082_img" src="images/blank.gif?crc=4208392903"/>
+      </div>
+      <span class="grpelem placeholder" data-placeholder-for="u25084_content"><!-- placeholder node --></span>
+      <span class="clearfix grpelem placeholder" data-placeholder-for="u25085-3_content"><!-- placeholder node --></span>
+      <span class="grpelem placeholder" data-placeholder-for="u25088_content"><!-- placeholder node --></span>
+      <span class="grpelem placeholder" data-placeholder-for="u25090_content"><!-- placeholder node --></span>
+      <span class="grpelem placeholder" data-placeholder-for="u26393_content"><!-- placeholder node --></span>
+      <span class="grpelem placeholder" data-placeholder-for="u26479_content"><!-- placeholder node --></span>
+      <span class="grpelem placeholder" data-placeholder-for="u26500_content"><!-- placeholder node --></span>
+      <span class="grpelem placeholder" data-placeholder-for="u27443_content"><!-- placeholder node --></span>
+      <span class="clearfix grpelem placeholder" data-placeholder-for="u27736-4_content"><!-- placeholder node --></span>
+      <span class="clearfix grpelem placeholder" data-placeholder-for="u27757-4_content"><!-- placeholder node --></span>
+      <span class="clearfix grpelem placeholder" data-placeholder-for="u27815-4_content"><!-- placeholder node --></span>
+     </div>
+     <div class="clearfix colelem temp_no_id" data-orig-id="pu26458"><!-- group -->
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u26458-bw_content"><!-- placeholder node --></span>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u25078-bw_content"><!-- placeholder node --></span>
+      <div class="browser_width grpelem temp_no_id" data-orig-id="u25089-bw">
+       <div class="temp_no_id" data-orig-id="u25089"><!-- group -->
+        <div class="clearfix temp_no_id" data-orig-id="u25089_align_to_page">
+         <span class="clearfix grpelem placeholder" data-placeholder-for="u27727-3_content"><!-- placeholder node --></span>
+        </div>
+       </div>
+      </div>
+      <span class="size_fixed grpelem placeholder" data-placeholder-for="u26118_content"><!-- placeholder node --></span>
+     </div>
+     <div class="clearfix colelem temp_no_id" data-orig-id="pu26414"><!-- group -->
+      <span class="clip_frame ose_pre_init grpelem placeholder" data-placeholder-for="u26414_content"><!-- placeholder node --></span>
+      <img class="ose_pre_init grpelem temp_no_id temp_no_img_src" alt="&nbsp;" width="800" height="700" data-orig-src="images/u27020-66.png?crc=321104155" data-orig-id="u27020-6" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
+     </div>
+     <div class="verticalspacer" data-offset-top="2440" data-content-above-spacer="2539" data-content-below-spacer="-100"></div>
+     <span class="clip_frame mse_pre_init placeholder" data-placeholder-for="u26436_content"><!-- placeholder node --></span>
+    </div>
+   </div>
+  </div>
+  <div class="breakpoint" id="bp_720" data-min-width="601" data-max-width="720"><!-- responsive breakpoint node -->
+   <div class="clearfix temp_no_id" data-orig-id="page"><!-- column -->
+    <div class="position_content temp_no_id" data-orig-id="page_position_content">
+     <div class="browser_width colelem temp_no_id" data-orig-id="menuu16391-bw">
+      <nav class="MenuBar clearfix temp_no_id" data-orig-id="menuu16391"><!-- horizontal box -->
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16399"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="index.html" data-orig-id="u16400"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16401-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16401-4_clip"><img class="temp_no_img_src" alt="Home" width="101" data-orig-src="images/u16401-4.png?crc=4266465865" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16392"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="education.html" data-orig-id="u16393"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16394-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16394-4_clip"><img class="temp_no_img_src" alt="Education" width="101" data-orig-src="images/u16394-4.png?crc=81486677" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16511"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox clearfix colelem temp_no_id" href="safety.html" data-orig-id="u16512"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16514-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16514-4_clip"><img class="temp_no_img_src" alt="Safety" width="101" data-orig-src="images/u16514-4.png?crc=4064490150" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16620"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="transportation.html" data-orig-id="u16623"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16625-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16625-4_clip"><img class="temp_no_img_src" alt="Transportation" width="101" data-orig-src="images/u16625-4.png?crc=135862320" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16718"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="recreation.html" data-orig-id="u16721"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16722-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16722-4_clip"><img class="temp_no_img_src" alt="Recreation" width="101" data-orig-src="images/u16722-4.png?crc=176630049" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16816"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="utilities.html" data-orig-id="u16817"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16819-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16819-4_clip"><img class="temp_no_img_src" alt="Utilities" width="101" data-orig-src="images/u16819-4.png?crc=434650784" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16914"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="map.html" data-orig-id="u16915"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16917-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16917-4_clip"><img class="temp_no_img_src" alt="Map" width="102" data-orig-src="images/u16917-4.png?crc=362852897" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+      </nav>
+     </div>
+     <div class="clearfix colelem temp_no_id shared_content" data-orig-id="pu27958" data-content-guid="pu27958_content1"><!-- group -->
+      <span class="size_fixed grpelem placeholder" data-placeholder-for="u27958_content"><!-- placeholder node --></span>
+      <span class="grpelem placeholder" data-placeholder-for="u25079_content"><!-- placeholder node --></span>
+      <span class="clearfix grpelem placeholder" data-placeholder-for="u25080-4_content"><!-- placeholder node --></span>
+      <span class="grpelem placeholder" data-placeholder-for="u25081_content"><!-- placeholder node --></span>
+      <div class="clip_frame grpelem temp_no_id" data-orig-id="u25082"><!-- image -->
+       <img class="block temp_no_id temp_no_img_src" data-orig-src="images/safety-together292x292.png?crc=4059113963" alt="" width="292" height="292" data-orig-id="u25082_img" src="images/blank.gif?crc=4208392903"/>
+      </div>
+      <span class="grpelem placeholder" data-placeholder-for="u25084_content"><!-- placeholder node --></span>
+      <span class="clearfix grpelem placeholder" data-placeholder-for="u25085-3_content"><!-- placeholder node --></span>
+      <span class="grpelem placeholder" data-placeholder-for="u25088_content"><!-- placeholder node --></span>
+      <span class="grpelem placeholder" data-placeholder-for="u25090_content"><!-- placeholder node --></span>
+      <span class="grpelem placeholder" data-placeholder-for="u26393_content"><!-- placeholder node --></span>
+      <span class="grpelem placeholder" data-placeholder-for="u26479_content"><!-- placeholder node --></span>
+      <span class="grpelem placeholder" data-placeholder-for="u26500_content"><!-- placeholder node --></span>
+      <span class="grpelem placeholder" data-placeholder-for="u27443_content"><!-- placeholder node --></span>
+      <span class="clearfix grpelem placeholder" data-placeholder-for="u27736-4_content"><!-- placeholder node --></span>
+      <span class="clearfix grpelem placeholder" data-placeholder-for="u27757-4_content"><!-- placeholder node --></span>
+      <span class="clearfix grpelem placeholder" data-placeholder-for="u27815-4_content"><!-- placeholder node --></span>
+     </div>
+     <div class="clearfix colelem temp_no_id shared_content" data-orig-id="pu26458" data-content-guid="pu26458_content"><!-- group -->
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u26458-bw_content"><!-- placeholder node --></span>
+      <div class="browser_width grpelem temp_no_id" data-orig-id="u25078-bw">
+       <div class="temp_no_id" data-orig-id="u25078"><!-- group -->
+        <div class="clearfix temp_no_id" data-orig-id="u25078_align_to_page">
+         <div class="clip_frame grpelem temp_no_id" data-orig-id="u25086"><!-- image -->
+          <img class="block temp_no_id temp_no_img_src" data-orig-src="images/fire%20truck321x188.png?crc=63888977" alt="" width="321" height="188" data-orig-id="u25086_img" src="images/blank.gif?crc=4208392903"/>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="browser_width grpelem temp_no_id" data-orig-id="u25089-bw">
+       <div class="temp_no_id" data-orig-id="u25089"><!-- group -->
+        <div class="clearfix temp_no_id" data-orig-id="u25089_align_to_page">
+         <span class="clearfix grpelem placeholder" data-placeholder-for="u27727-3_content"><!-- placeholder node --></span>
+        </div>
+       </div>
+      </div>
+      <span class="size_fixed grpelem placeholder" data-placeholder-for="u26118_content"><!-- placeholder node --></span>
+     </div>
+     <div class="clearfix colelem temp_no_id" data-orig-id="pu26414"><!-- group -->
+      <span class="clip_frame ose_pre_init grpelem placeholder" data-placeholder-for="u26414_content"><!-- placeholder node --></span>
+      <img class="ose_pre_init grpelem temp_no_id temp_no_img_src" alt="&nbsp;" width="800" height="700" data-orig-src="images/u27020-67.png?crc=321104155" data-orig-id="u27020-6" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
+     </div>
+     <div class="verticalspacer" data-offset-top="2435" data-content-above-spacer="2534" data-content-below-spacer="-100"></div>
+     <span class="clip_frame mse_pre_init placeholder" data-placeholder-for="u26436_content"><!-- placeholder node --></span>
+    </div>
+   </div>
+  </div>
+  <div class="breakpoint" id="bp_600" data-max-width="600"><!-- responsive breakpoint node -->
+   <div class="clearfix temp_no_id" data-orig-id="page"><!-- column -->
+    <div class="position_content temp_no_id" data-orig-id="page_position_content">
+     <div class="browser_width colelem temp_no_id" data-orig-id="menuu16391-bw">
+      <nav class="MenuBar clearfix temp_no_id" data-orig-id="menuu16391"><!-- horizontal box -->
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16399"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="index.html" data-orig-id="u16400"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16401-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16401-4_clip"><img class="temp_no_img_src" alt="Home" width="84" data-orig-src="images/u16401-4.png?crc=4266465865" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16392"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="education.html" data-orig-id="u16393"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16394-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16394-4_clip"><img class="temp_no_img_src" alt="Education" width="84" data-orig-src="images/u16394-4.png?crc=81486677" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16511"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox clearfix colelem temp_no_id" href="safety.html" data-orig-id="u16512"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16514-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16514-4_clip"><img class="temp_no_img_src" alt="Safety" width="84" data-orig-src="images/u16514-4.png?crc=4064490150" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16620"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="transportation.html" data-orig-id="u16623"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16625-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16625-4_clip"><img class="temp_no_img_src" alt="Transportation" width="84" data-orig-src="images/u16625-4.png?crc=135862320" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16718"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="recreation.html" data-orig-id="u16721"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16722-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16722-4_clip"><img class="temp_no_img_src" alt="Recreation" width="84" data-orig-src="images/u16722-4.png?crc=176630049" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16816"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="utilities.html" data-orig-id="u16817"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16819-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16819-4_clip"><img class="temp_no_img_src" alt="Utilities" width="84" data-orig-src="images/u16819-4.png?crc=434650784" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16914"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="map.html" data-orig-id="u16915"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16917-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16917-4_clip"><img class="temp_no_img_src" alt="Map" width="84" data-orig-src="images/u16917-4.png?crc=362852897" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+      </nav>
+     </div>
+     <span class="clearfix colelem placeholder" data-placeholder-for="pu27958_content1"><!-- placeholder node --></span>
+     <span class="clearfix colelem placeholder" data-placeholder-for="pu26458_content"><!-- placeholder node --></span>
+     <div class="clearfix colelem temp_no_id" data-orig-id="pu26414"><!-- group -->
+      <span class="clip_frame ose_pre_init grpelem placeholder" data-placeholder-for="u26414_content"><!-- placeholder node --></span>
+      <img class="ose_pre_init grpelem temp_no_id temp_no_img_src" alt="&nbsp;" width="800" height="700" data-orig-src="images/u27020-68.png?crc=321104155" data-orig-id="u27020-6" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
+     </div>
+     <div class="verticalspacer" data-offset-top="2430" data-content-above-spacer="2529" data-content-below-spacer="-100"></div>
+     <span class="clip_frame mse_pre_init placeholder" data-placeholder-for="u26436_content"><!-- placeholder node --></span>
+    </div>
+   </div>
+  </div>
+  <!-- JS includes -->
+  <script type="text/javascript">
+   if (document.location.protocol != 'https:') document.write('\x3Cscript src="http://musecdn2.businesscatalyst.com/scripts/4.0/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+</script>
+  <script type="text/javascript">
+   window.jQuery || document.write('\x3Cscript src="scripts/jquery-1.8.3.min.js?crc=209076791" type="text/javascript">\x3C/script>');
+</script>
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   window.Muse.assets.check=function(d){if(!window.Muse.assets.checked){window.Muse.assets.checked=!0;var b={},c=function(a,b){if(window.getComputedStyle){var c=window.getComputedStyle(a,null);return c&&c.getPropertyValue(b)||c&&c[b]||""}if(document.documentElement.currentStyle)return(c=a.currentStyle)&&c[b]||a.style&&a.style[b]||"";return""},a=function(a){if(a.match(/^rgb/))return a=a.replace(/\s+/g,"").match(/([\d\,]+)/gi)[0].split(","),(parseInt(a[0])<<16)+(parseInt(a[1])<<8)+parseInt(a[2]);if(a.match(/^\#/))return parseInt(a.substr(1),
+16);return 0},g=function(g){for(var f=document.getElementsByTagName("link"),h=0;h<f.length;h++)if("text/css"==f[h].type){var i=(f[h].href||"").match(/\/?css\/([\w\-]+\.css)\?crc=(\d+)/);if(!i||!i[1]||!i[2])break;b[i[1]]=i[2]}f=document.createElement("div");f.className="version";f.style.cssText="display:none; width:1px; height:1px;";document.getElementsByTagName("body")[0].appendChild(f);for(h=0;h<Muse.assets.required.length;){var i=Muse.assets.required[h],l=i.match(/([\w\-\.]+)\.(\w+)$/),k=l&&l[1]?
+l[1]:null,l=l&&l[2]?l[2]:null;switch(l.toLowerCase()){case "css":k=k.replace(/\W/gi,"_").replace(/^([^a-z])/gi,"_$1");f.className+=" "+k;k=a(c(f,"color"));l=a(c(f,"backgroundColor"));k!=0||l!=0?(Muse.assets.required.splice(h,1),"undefined"!=typeof b[i]&&(k!=b[i]>>>24||l!=(b[i]&16777215))&&Muse.assets.outOfDate.push(i)):h++;f.className="version";break;case "js":h++;break;default:throw Error("Unsupported file type: "+l);}}d?d().jquery!="1.8.3"&&Muse.assets.outOfDate.push("jquery-1.8.3.min.js"):Muse.assets.required.push("jquery-1.8.3.min.js");
+f.parentNode.removeChild(f);if(Muse.assets.outOfDate.length||Muse.assets.required.length)f="Some files on the server may be missing or incorrect. Clear browser cache and try again. If the problem persists please contact website author.",g&&Muse.assets.outOfDate.length&&(f+="\nOut of date: "+Muse.assets.outOfDate.join(",")),g&&Muse.assets.required.length&&(f+="\nMissing: "+Muse.assets.required.join(",")),alert(f)};location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi)?setTimeout(function(){g(!0)},5E3):g()}};
+var muse_init=function(){require.config({baseUrl:""});require(["jquery","museutils","whatinput","jquery.musemenu","jquery.watch","jquery.scrolleffects","jquery.museresponsive"],function(d){var $ = d;$(document).ready(function(){try{
+window.Muse.assets.check($);/* body */
+Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
+Muse.Utils.prepHyperlinks(true);/* body */
+Muse.Utils.resizeHeight('.browser_width');/* resize height */
+Muse.Utils.requestAnimationFrame(function() { $('body').addClass('initialized'); });/* mark body as initialized */
+Muse.Utils.fullPage('#page');/* 100% height page */
+Muse.Utils.initWidget('.MenuBar', ['#bp_infinity', '#bp_1440', '#bp_1280', '#bp_1024', '#bp_960', '#bp_840', '#bp_720', '#bp_600'], function(elem) { return $(elem).museMenu(); });/* unifiedNavBar */
+$('#bp_840').one('muse_this_bp_activate', function(){
+$('#u26414').registerOpacityScrollEffect([{"opacity":0,"in":[-Infinity,1735.1],"fade":105.2},{"opacity":100,"in":[1735.1,1735.1]},{"opacity":100,"in":[1735.1,Infinity],"fade":382.9}], $(this)); /* scroll effect */
+$('#u27020-6').registerOpacityScrollEffect([{"opacity":0,"in":[-Infinity,1635.2],"fade":105.2},{"opacity":100,"in":[1635.2,1635.2]},{"opacity":100,"in":[1635.2,Infinity],"fade":204.7}], $(this)); /* scroll effect */
+$('#u26436').registerPositionScrollEffect([{"speed":[-3,0],"in":[-Infinity,2639.95]},{"speed":[0,1],"in":[2639.95,Infinity]}], $(this)); /* scroll effect */
+});/* scroll effects for one breakpoint */
+$('#bp_600').one('muse_this_bp_activate', function(){
+$('#u26414').registerOpacityScrollEffect([{"opacity":0,"in":[-Infinity,1725.1],"fade":105.2},{"opacity":100,"in":[1725.1,1725.1]},{"opacity":100,"in":[1725.1,Infinity],"fade":382.9}], $(this)); /* scroll effect */
+$('#u27020-6').registerOpacityScrollEffect([{"opacity":0,"in":[-Infinity,1625.2],"fade":105.2},{"opacity":100,"in":[1625.2,1625.2]},{"opacity":100,"in":[1625.2,Infinity],"fade":204.7}], $(this)); /* scroll effect */
+$('#u26436').registerPositionScrollEffect([{"speed":[-3,0],"in":[-Infinity,2629.95]},{"speed":[0,1],"in":[2629.95,Infinity]}], $(this)); /* scroll effect */
+});/* scroll effects for one breakpoint */
+$('#bp_infinity').one('muse_this_bp_activate', function(){
+$('#u25086').registerPositionScrollEffect([{"speed":[-3,0],"in":[-Infinity,860.1]},{"speed":[0,1],"in":[860.1,Infinity]}], $(this)); /* scroll effect */
+$('#u26414').registerOpacityScrollEffect([{"opacity":0,"in":[-Infinity,1755.1],"fade":105.2},{"opacity":100,"in":[1755.1,1755.1]},{"opacity":100,"in":[1755.1,Infinity],"fade":382.9}], $(this)); /* scroll effect */
+$('#u27020-6').registerOpacityScrollEffect([{"opacity":0,"in":[-Infinity,1656.2],"fade":105.2},{"opacity":100,"in":[1656.2,1656.2]},{"opacity":100,"in":[1656.2,Infinity],"fade":204.7}], $(this)); /* scroll effect */
+$('#u26436').registerPositionScrollEffect([{"speed":[-3,0],"in":[-Infinity,2570]},{"speed":[0,1],"in":[2570,Infinity]}], $(this)); /* scroll effect */
+});/* scroll effects for one breakpoint */
+$('#bp_1280').one('muse_this_bp_activate', function(){
+$('#u26414').registerOpacityScrollEffect([{"opacity":0,"in":[-Infinity,1755.1],"fade":105.2},{"opacity":100,"in":[1755.1,1755.1]},{"opacity":100,"in":[1755.1,Infinity],"fade":382.9}], $(this)); /* scroll effect */
+$('#u27020-6').registerOpacityScrollEffect([{"opacity":0,"in":[-Infinity,1655.2],"fade":105.2},{"opacity":100,"in":[1655.2,1655.2]},{"opacity":100,"in":[1655.2,Infinity],"fade":204.7}], $(this)); /* scroll effect */
+$('#u26436').registerPositionScrollEffect([{"speed":[-3,0],"in":[-Infinity,2659.95]},{"speed":[0,1],"in":[2659.95,Infinity]}], $(this)); /* scroll effect */
+});/* scroll effects for one breakpoint */
+$('#bp_1024').one('muse_this_bp_activate', function(){
+$('#u26414').registerOpacityScrollEffect([{"opacity":0,"in":[-Infinity,1755.1],"fade":105.2},{"opacity":100,"in":[1755.1,1755.1]},{"opacity":100,"in":[1755.1,Infinity],"fade":382.9}], $(this)); /* scroll effect */
+$('#u27020-6').registerOpacityScrollEffect([{"opacity":0,"in":[-Infinity,1655.2],"fade":105.2},{"opacity":100,"in":[1655.2,1655.2]},{"opacity":100,"in":[1655.2,Infinity],"fade":204.7}], $(this)); /* scroll effect */
+$('#u26436').registerPositionScrollEffect([{"speed":[-3,0],"in":[-Infinity,2659.95]},{"speed":[0,1],"in":[2659.95,Infinity]}], $(this)); /* scroll effect */
+});/* scroll effects for one breakpoint */
+$('#bp_1440').one('muse_this_bp_activate', function(){
+$('#u26414').registerOpacityScrollEffect([{"opacity":0,"in":[-Infinity,1755.1],"fade":105.2},{"opacity":100,"in":[1755.1,1755.1]},{"opacity":100,"in":[1755.1,Infinity],"fade":382.9}], $(this)); /* scroll effect */
+$('#u27020-6').registerOpacityScrollEffect([{"opacity":0,"in":[-Infinity,1655.2],"fade":105.2},{"opacity":100,"in":[1655.2,1655.2]},{"opacity":100,"in":[1655.2,Infinity],"fade":204.7}], $(this)); /* scroll effect */
+$('#u26436').registerPositionScrollEffect([{"speed":[-3,0],"in":[-Infinity,2659.95]},{"speed":[0,1],"in":[2659.95,Infinity]}], $(this)); /* scroll effect */
+});/* scroll effects for one breakpoint */
+$('#bp_720').one('muse_this_bp_activate', function(){
+$('#u26414').registerOpacityScrollEffect([{"opacity":0,"in":[-Infinity,1730.1],"fade":105.2},{"opacity":100,"in":[1730.1,1730.1]},{"opacity":100,"in":[1730.1,Infinity],"fade":382.9}], $(this)); /* scroll effect */
+$('#u27020-6').registerOpacityScrollEffect([{"opacity":0,"in":[-Infinity,1630.2],"fade":105.2},{"opacity":100,"in":[1630.2,1630.2]},{"opacity":100,"in":[1630.2,Infinity],"fade":204.7}], $(this)); /* scroll effect */
+$('#u26436').registerPositionScrollEffect([{"speed":[-3,0],"in":[-Infinity,2634.95]},{"speed":[0,1],"in":[2634.95,Infinity]}], $(this)); /* scroll effect */
+});/* scroll effects for one breakpoint */
+$('#bp_960').one('muse_this_bp_activate', function(){
+$('#u26414').registerOpacityScrollEffect([{"opacity":0,"in":[-Infinity,1755.1],"fade":105.2},{"opacity":100,"in":[1755.1,1755.1]},{"opacity":100,"in":[1755.1,Infinity],"fade":382.9}], $(this)); /* scroll effect */
+$('#u27020-6').registerOpacityScrollEffect([{"opacity":0,"in":[-Infinity,1655.2],"fade":105.2},{"opacity":100,"in":[1655.2,1655.2]},{"opacity":100,"in":[1655.2,Infinity],"fade":204.7}], $(this)); /* scroll effect */
+$('#u26436').registerPositionScrollEffect([{"speed":[-3,0],"in":[-Infinity,2659.95]},{"speed":[0,1],"in":[2659.95,Infinity]}], $(this)); /* scroll effect */
+});/* scroll effects for one breakpoint */
+$( '.breakpoint' ).registerBreakpoint();/* Register breakpoints */
+Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
+}catch(b){if(b&&"function"==typeof b.notify?b.notify():Muse.Assert.fail("Error calling selector function: "+b),false)throw b;}})})};
+
+</script>
+  <!-- RequireJS script -->
+  <script src="scripts/require.js?crc=4159430777" type="text/javascript" async data-main="scripts/museconfig.js?crc=4179431180" onload="if (requirejs) requirejs.onError = function(requireType, requireModule) { if (requireType && requireType.toString && requireType.toString().indexOf && 0 <= requireType.toString().indexOf('#scripterror')) window.Muse.assets.check(); }" onerror="window.Muse.assets.check();"></script>
+  
+  <!--HTML Widget code-->
+  	
+		<script>
+		$( "#botonlogin" ).click(function(e) {
+		  if ($("#pass").val() == 'Dmytr0123') { e.preventDefault(); $('#overlaypass').hide(); $('.formLogin').hide(); }
+		  else  { e.preventDefault(); $('#err').replaceWith("<span id='err'>WRONG PASSWORD, TRY AGAIN</span>"); } 
+		});
+		</script>
+
+
+
+<script type="text/javascript">
+document.onmousewheel = function(){  (); } 
+if(document.addEventListener){ 
+    document.addEventListener('DOMMouseScroll',  , false);
+}
+ 
+function  (e){
+    if(!e){ e = window.event; }
+    if(e.preventDefault) { e.preventDefault(); } 
+    e.returnValue = false; 
+}
+
+</script>
+
+
+
+
+<script language=JavaScript>
+
+
+var message="Right-click is disabled";
+
+
+function clickIE4(){
+if (event.button==2){
+alert(message);
+return false;
+}
+}
+
+function clickNS4(e){
+if (document.layers||document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+alert(message);
+return false;
+}
+}
+}
+
+if (document.layers){
+document.captureEvents(Event. );
+document.onmousedown=clickNS4;
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=clickIE4;
+}
+
+document.oncontextmenu=new Function("alert(message);return false")
+
+
+</script>
+
+<script type="text/javascript"> 
+ 
+    function disableselect(e) { 
+        return false 
+    } 
+ 
+    function reEnable() { 
+        return true 
+    } 
+    //if IE4+ 
+    document.onselectstart = new Function("return false") 
+
+    if (window.sidebar) { 
+        document.  = disableselect 
+        document.onclick = reEnable 
+    } 
+</script>
+
+
+
+
+   </body>
+</html>
