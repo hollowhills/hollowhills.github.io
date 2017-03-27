@@ -1,590 +1,455 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://hollowhills.github.io/index.html</loc>
-    <lastmod>2016-12-30</lastmod>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/grad%20cap.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/grad%20cap_2x.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/police.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/police_2x.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/plane_png5219.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/plane_png5219_2x.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/bike.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/bike_2x.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/plants-and-facilities-icon.png</image:loc>
+    </image:image>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/entertainment.html</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/activity.html</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/recreation.html</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/water.html</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/sewage.html</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/electricity.html</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/skyrail.html</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/bus.html</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/metro.html</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/aiport.html</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/train-staion.html</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/international.html</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/local.html</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/medical.html</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/fire.html</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/police.html</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/college.html</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/grade-school.html</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/map.html</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/utilities.html</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/transportation.html</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/safety.html</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/airport.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://hollowhills.github.io/education.html</loc>
-    <lastmod>2016-12-30</lastmod>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/header-video-1600x800.jpg</image:loc>
+    </image:image>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/saf-template720x406.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/safety.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/safety-together.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/safety-together_2x.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/fire%20truck.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/medic.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/medic_2x.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/police%20car.png</image:loc>
+    </image:image>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/tran--template720x405.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/transportation.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/recreation--template405x405.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/utilities.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/map--template405x405.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/grade-school.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/header-video-1600x800.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/elementary.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/middle.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/high.png</image:loc>
+    </image:image>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/uti--template720x405.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/college.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/skyline--templat1280x667.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/police.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/edu-template640x360.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/fire.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/saf-template640x360.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/medical.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/tran--template640x360.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/local.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/metro.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/bus.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/skyrail.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/header-video-1600x800.jpg</image:loc>
+    </image:image>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/recreation--template360x360.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/international.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/map--template360x360.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/train-staion.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/uti--template640x360.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/aiport.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/skyline--templat1080x563.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/metro.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/fast_train_png_clipart-590.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/fast_train_png_clipart-590_2x.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/n-s.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/e-w.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/metro%20-%20circle.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/metro%20-%20circle_2x.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/plane.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/street-of-suburb-areas.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/red_starsvg.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/ltkgrerta.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/shiny_blue_water_droplet.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/shiny_blue_water_droplet_2x.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/header-video-1600x800.jpg</image:loc>
+    </image:image>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/edu-template540x304.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/bus.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/saf-template540x304.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/skyrail.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/tran--template540x304.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/electricity.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/recreation--template304x304.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/sewage.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/map--template304x304.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/water.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/uti--template540x304.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/recreation.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/header-video-1600x800.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/tree.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/sports.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/sports_2x.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/movies.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/movies_2x.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/resort.jpg</image:loc>
+    </image:image>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/skyline--templat960x500.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/north.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/edu-template480x270.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/east.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/saf-template480x270.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/circle.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/tran--template480x270.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/88.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/recreation--template270x270.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/outer.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/skyline--templat1440x751.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/red.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/edu-template720x405.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/green.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/skyline--templat480x250.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/blue.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/edu-template240x135.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/south.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/saf-template240x135.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/west.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/tran--template240x135.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/10.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/recreation--template135x135.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/25.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/map--template135x136.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/3.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/uti--template240x135.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/43.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/under%20construction.gif</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/53.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/safety-together.png</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/why-bus.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/fire%20truck.png</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/elementary.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/medic.png</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/middle.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/police%20car.png</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/high.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/fire%20truck685x400.png</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/army.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/police%20car762x400.png</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/why-metro.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/header-video-1600x800.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/current-event-clock-clipart.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/speedometer-148960_1280.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/2000px-dollar_sign_in_circlesvg.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/2000px-dollar_sign_in_circlesvg_2x.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/sun.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://hollowhills.github.io/images/sun_2x.png</image:loc>
+    </image:image>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/safety-together400x400.png</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/theater.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/medic400x400.png</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/why-skyrail.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/safety-together350x350.png</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/parks.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/fire%20truck600x350.png</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/sightseeing.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/medic350x350.png</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/sport.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/police%20car667x350.png</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/resort.html</loc>
+    <lastmod>2017-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://hollowhills.github.io/images/safety-together325x325.png</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/images/fire%20truck557x325.png</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/images/medic325x325.png</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/images/police%20car619x325.png</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/images/skyline--templat.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/images/uti--template960x540.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/images/map--template540x540.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/images/recreation--template540x540.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/images/tran--template960x540.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/images/saf-template960x540.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/images/edu-template960x540.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/images/skyline--templat1920x1001.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/images/uti--template1280x720.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/images/map--template720x720.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/images/recreation--template720x720.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/images/tran--template1280x721.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/images/saf-template1280x720.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/images/edu-template1280x721.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/images/skyline--templat2560x1334.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/images/uti--template.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/images/map--template.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/images/recreation--template.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/images/tran--template.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/images/saf-template.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/images/edu-template.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/images/welcome%20sign.png</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/images/map--template270x271.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://hollowhills.github.io/images/uti--template480x270.jpg</loc>
-    <lastmod>2016-12-30</lastmod>
+    <loc>http://hollowhills.github.io/assets/the-big-bang-theory-s03e02-the-jiminy-conjecture-(1080p-h265-joy).mkv</loc>
+    <lastmod>2016-11-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

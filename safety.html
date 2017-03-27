@@ -3,7 +3,7 @@
  <head>
 
   <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
-  <meta name="generator" content="2017.0.1.363"/>
+  <meta name="generator" content="2017.0.2.363"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   
   <script type="text/javascript">
@@ -11,134 +11,818 @@
 document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
 
 // Check that all required assets are uploaded and up-to-date
-if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.musemenu.js", "jquery.watch.js", "jquery.museresponsive.js", "require.js", "safety.css"], "outOfDate":[]};
+if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.musemenu.js", "jquery.watch.js", "require.js", "safety.css"], "outOfDate":[]};
 </script>
   
+  <link rel="shortcut icon" href="images/favicon.ico?crc=243873714"/>
   <title>Safety</title>
   <!-- CSS -->
-  <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=4076139336"/>
-  <link rel="stylesheet" type="text/css" href="css/master_safety.css?crc=3778261276"/>
-  <link rel="stylesheet" type="text/css" href="css/safety.css?crc=453200453" id="pagesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=58936183"/>
+  <link rel="stylesheet" type="text/css" href="css/master_safety.css?crc=4033711791"/>
+  <link rel="stylesheet" type="text/css" href="css/safety.css?crc=4002973423" id="pagesheet"/>
   <!-- IE-only CSS -->
   <!--[if lt IE 9]>
-  <link rel="stylesheet" type="text/css" href="css/nomq_preview_master_safety.css?crc=3824530138"/>
-  <link rel="stylesheet" type="text/css" href="css/nomq_safety.css?crc=107056265" id="nomq_pagesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/iefonts_safety.css?crc=3820914100"/>
   <![endif]-->
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   var __adobewebfontsappname__ = "muse";
+</script>
   <!-- JS includes -->
+  <script src="https://webfonts.creativecloud.com/roboto:n5,n9,n7:default.js" type="text/javascript"></script>
   <!--[if lt IE 9]>
   <script src="scripts/html5shiv.js?crc=4241844378" type="text/javascript"></script>
   <![endif]-->
     <!--HTML Widget code-->
   
 		<style>
-		#overlaypass {
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background-color: #cecece;
-			filter:alpha(opacity=50);
-			-moz-opacity:0.5;
-			-khtml-opacity: 0.5;
-			opacity: 1;
-			z-index: 9990000;
-			text-align:center;
-		}
-		.formLogin form{
-			width:95%;
-			max-width:250px;    
-			margin: 0 auto;	
-		}
-		.formLogin{
-			font: 95% Arial, Helvetica, sans-serif;
-			padding: 16px;
-			background: #F7F7F7;
-		}
-		.formLogin h1{
-			padding: 20px 0;
-			font-size: 140%;
-			font-weight: 300;
-			text-align: center;
-			color: #000;
-		}
-		.formLogin input[type="text"],
-		.formLogin input[type="date"],
-		.formLogin input[type="datetime"],
-		.formLogin input[type="password"],
-		.formLogin input[type="number"],
-		.formLogin input[type="search"],
-		.formLogin input[type="time"],
-		.formLogin input[type="url"],
-		.formLogin textarea,
-		.formLogin select
-		{
-			-webkit-transition: all 0.30s ease-in-out;
-			-moz-transition: all 0.30s ease-in-out;
-			-ms-transition: all 0.30s ease-in-out;
-			-o-transition: all 0.30s ease-in-out;
-			outline: none;
-			box-sizing: border-box;
-			-webkit-box-sizing: border-box;
-			-moz-box-sizing: border-box;
-			width: 100%;
-			background: #fff;
-			margin-bottom: 4%;
-			border: 1px solid #ccc;
-			padding: 3%;
-			color: #555;
-			font: 95% Arial, Helvetica, sans-serif;
-		}
-		.formLogin input[type="text"]:focus,
-		.formLogin input[type="date"]:focus,
-		.formLogin input[type="datetime"]:focus,
-		.formLogin input[type="password"]:focus,
-		.formLogin input[type="number"]:focus,
-		.formLogin input[type="search"]:focus,
-		.formLogin input[type="time"]:focus,
-		.formLogin input[type="url"]:focus,
-		.formLogin textarea:focus,
-		.formLogin select:focus
-		{
-			box-shadow: 0 0 5px #43D1AF;
-			padding: 3%;
-			border: 1px solid #43D1AF;
-		}
-		.formLogin input[type="submit"],
-		.formLogin input[type="button"]{
-			box-sizing: border-box;
-			-webkit-box-sizing: border-box;
-			-moz-box-sizing: border-box;
-			width: 100%;
-			padding: 3%;
-			background: #43D1AF;
-			border-bottom: 2px solid #30C29E;
-			border-top-style: none;
-			border-right-style: none;
-			border-left-style: none;   
-			color: #fff;
-		}
-		.formLogin input[type="submit"]:hover,
-		.formLogin input[type="button"]:hover{
-			background: #2EBC99;
-		}
-		#botonlogin, #pass{
-			font-size: 140%;	
-		}
-		#err{
-			color:red;
-		}
-		</style>
-		<div id="overlaypass" class="formLogin">
-			<form>
-			<h1>ENTER PASSWORD TO CONTINUE</h1>
-				<input type="password" id="pass">
-				<input type="submit" id="botonlogin" value="LOGIN">
-				<p style="margin-top: 30px;"><span id='err'></span></p>
-			</form>
-		</div>
-		
 
+
+
+
+.u65314btn {
+	line-height: 100px;
+	height: 100px;
+	text-align: center;
+	width: 100%px;
+	cursor: pointer;
+}
+
+/* 
+========================
+      BUTTON ONE
+========================
+*/
+.u65314btn-one {
+	color: #000000;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	position: relative;
+}
+.u65314btn-one span {
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.u65314btn-one::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #FF0000;
+	border-bottom-color: #FF0000;
+	-webkit-transform: scale(0.1, 1);
+	        transform: scale(0.1, 1);
+}
+.u65314btn-one:hover span {
+	letter-spacing: 2px;
+}
+.u65314btn-one:hover::before {
+	opacity: 1;	
+	-webkit-transform: scale(1, 1);	
+	        transform: scale(1, 1);	
+}
+.u65314btn-one::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	background-color:transparent;
+    opacity: 0.4;
+}
+.u65314btn-one:hover::after {
+	opacity: 0;	
+	-webkit-transform: scale(0.1, 1);	
+	        transform: scale(0.1, 1);
+}
+
+
+/* 
+========================
+      BUTTON TWO
+========================
+*/
+.u65314btn-two {
+	color: #000000;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	position: relative;	
+}
+.u65314btn-two span {
+	z-index: 2;	
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;	
+}
+.u65314btn-two::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	border: 1px solid #FF0000;
+	background-color: transparent;
+    opacity: 0.4;
+}
+.u65314btn-two::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+    opacity: 0.4;
+}
+.u65314btn-two:hover::before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+    
+background-color: rgba(255,255,255,0);
+  
+}
+.u65314btn-two:hover::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+    border: 1px solid #FF0000;
+   background-color: rgba(255,255,255,0);
+    
+    
+
+}
+
+
+/* 
+========================
+      BUTTON THREE
+========================
+*/
+.u65314btn-three {
+	color: #000000;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	position: relative;
+}
+.u65314btn-three::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-color: transparent;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+    opacity: 0.4;
+ 
+}
+.u65314btn-three:hover::before {
+	opacity: 0 ;
+	-webkit-transform: scale(0.5,0.5);
+	        transform: scale(0.5,0.5);
+}
+.u65314btn-three::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	
+	-webkit-transform: scale(1.2,1.2);
+	        transform: scale(1.2,1.2);
+    opacity: 0.4;
+}
+.u65314btn-three:hover::after {
+    border: 1px solid #FF0000;
+	opacity: 1;
+	-webkit-transform: scale(1,1);
+	        transform: scale(1,1);
+}
+.linkClass{
+text-decoration:none !important;
+}
+	
+</style>
+	
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+		<style>
+
+
+
+
+.u65927btn {
+	line-height: 100px;
+	height: 100px;
+	text-align: center;
+	width: 100%px;
+	cursor: pointer;
+}
+
+/* 
+========================
+      BUTTON ONE
+========================
+*/
+.u65927btn-one {
+	color: #39393A;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	position: relative;
+}
+.u65927btn-one span {
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.u65927btn-one::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #000000;
+	border-bottom-color: #000000;
+	-webkit-transform: scale(0.1, 1);
+	        transform: scale(0.1, 1);
+}
+.u65927btn-one:hover span {
+	letter-spacing: 2px;
+}
+.u65927btn-one:hover::before {
+	opacity: 1;	
+	-webkit-transform: scale(1, 1);	
+	        transform: scale(1, 1);	
+}
+.u65927btn-one::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	background-color:transparent;
+    opacity: 0.4;
+}
+.u65927btn-one:hover::after {
+	opacity: 0;	
+	-webkit-transform: scale(0.1, 1);	
+	        transform: scale(0.1, 1);
+}
+
+
+/* 
+========================
+      BUTTON TWO
+========================
+*/
+.u65927btn-two {
+	color: #39393A;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	position: relative;	
+}
+.u65927btn-two span {
+	z-index: 2;	
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;	
+}
+.u65927btn-two::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	border: 1px solid #000000;
+	background-color: transparent;
+    opacity: 0.4;
+}
+.u65927btn-two::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+    opacity: 0.4;
+}
+.u65927btn-two:hover::before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+    
+background-color: rgba(255,255,255,0);
+  
+}
+.u65927btn-two:hover::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+    border: 1px solid #000000;
+   background-color: rgba(255,255,255,0);
+    
+    
+
+}
+
+
+/* 
+========================
+      BUTTON THREE
+========================
+*/
+.u65927btn-three {
+	color: #39393A;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	position: relative;
+}
+.u65927btn-three::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-color: transparent;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+    opacity: 0.4;
+ 
+}
+.u65927btn-three:hover::before {
+	opacity: 0 ;
+	-webkit-transform: scale(0.5,0.5);
+	        transform: scale(0.5,0.5);
+}
+.u65927btn-three::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	
+	-webkit-transform: scale(1.2,1.2);
+	        transform: scale(1.2,1.2);
+    opacity: 0.4;
+}
+.u65927btn-three:hover::after {
+    border: 1px solid #000000;
+	opacity: 1;
+	-webkit-transform: scale(1,1);
+	        transform: scale(1,1);
+}
+.linkClass{
+text-decoration:none !important;
+}
+	
+</style>
+	
+		<style>
+
+
+
+
+.u65922btn {
+	line-height: 100px;
+	height: 100px;
+	text-align: center;
+	width: 100%px;
+	cursor: pointer;
+}
+
+/* 
+========================
+      BUTTON ONE
+========================
+*/
+.u65922btn-one {
+	color: #39393A;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	position: relative;
+}
+.u65922btn-one span {
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.u65922btn-one::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #000000;
+	border-bottom-color: #000000;
+	-webkit-transform: scale(0.1, 1);
+	        transform: scale(0.1, 1);
+}
+.u65922btn-one:hover span {
+	letter-spacing: 2px;
+}
+.u65922btn-one:hover::before {
+	opacity: 1;	
+	-webkit-transform: scale(1, 1);	
+	        transform: scale(1, 1);	
+}
+.u65922btn-one::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	background-color:transparent;
+    opacity: 0.4;
+}
+.u65922btn-one:hover::after {
+	opacity: 0;	
+	-webkit-transform: scale(0.1, 1);	
+	        transform: scale(0.1, 1);
+}
+
+
+/* 
+========================
+      BUTTON TWO
+========================
+*/
+.u65922btn-two {
+	color: #39393A;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	position: relative;	
+}
+.u65922btn-two span {
+	z-index: 2;	
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;	
+}
+.u65922btn-two::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	border: 1px solid #000000;
+	background-color: transparent;
+    opacity: 0.4;
+}
+.u65922btn-two::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+    opacity: 0.4;
+}
+.u65922btn-two:hover::before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+    
+background-color: rgba(255,255,255,0);
+  
+}
+.u65922btn-two:hover::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+    border: 1px solid #000000;
+   background-color: rgba(255,255,255,0);
+    
+    
+
+}
+
+
+/* 
+========================
+      BUTTON THREE
+========================
+*/
+.u65922btn-three {
+	color: #39393A;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	position: relative;
+}
+.u65922btn-three::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-color: transparent;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+    opacity: 0.4;
+ 
+}
+.u65922btn-three:hover::before {
+	opacity: 0 ;
+	-webkit-transform: scale(0.5,0.5);
+	        transform: scale(0.5,0.5);
+}
+.u65922btn-three::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	
+	-webkit-transform: scale(1.2,1.2);
+	        transform: scale(1.2,1.2);
+    opacity: 0.4;
+}
+.u65922btn-three:hover::after {
+    border: 1px solid #000000;
+	opacity: 1;
+	-webkit-transform: scale(1,1);
+	        transform: scale(1,1);
+}
+.linkClass{
+text-decoration:none !important;
+}
+	
+</style>
+	
+		<style>
+
+
+
+
+.u65935btn {
+	line-height: 100px;
+	height: 100px;
+	text-align: center;
+	width: 100%px;
+	cursor: pointer;
+}
+
+/* 
+========================
+      BUTTON ONE
+========================
+*/
+.u65935btn-one {
+	color: #000000;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	position: relative;
+}
+.u65935btn-one span {
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.u65935btn-one::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #0000FF;
+	border-bottom-color: #0000FF;
+	-webkit-transform: scale(0.1, 1);
+	        transform: scale(0.1, 1);
+}
+.u65935btn-one:hover span {
+	letter-spacing: 2px;
+}
+.u65935btn-one:hover::before {
+	opacity: 1;	
+	-webkit-transform: scale(1, 1);	
+	        transform: scale(1, 1);	
+}
+.u65935btn-one::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	background-color:transparent;
+    opacity: 0.4;
+}
+.u65935btn-one:hover::after {
+	opacity: 0;	
+	-webkit-transform: scale(0.1, 1);	
+	        transform: scale(0.1, 1);
+}
+
+
+/* 
+========================
+      BUTTON TWO
+========================
+*/
+.u65935btn-two {
+	color: #000000;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	position: relative;	
+}
+.u65935btn-two span {
+	z-index: 2;	
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;	
+}
+.u65935btn-two::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	border: 1px solid #0000FF;
+	background-color: transparent;
+    opacity: 0.4;
+}
+.u65935btn-two::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+    opacity: 0.4;
+}
+.u65935btn-two:hover::before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+    
+background-color: rgba(255,255,255,0);
+  
+}
+.u65935btn-two:hover::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+    border: 1px solid #0000FF;
+   background-color: rgba(255,255,255,0);
+    
+    
+
+}
+
+
+/* 
+========================
+      BUTTON THREE
+========================
+*/
+.u65935btn-three {
+	color: #000000;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	position: relative;
+}
+.u65935btn-three::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-color: transparent;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+    opacity: 0.4;
+ 
+}
+.u65935btn-three:hover::before {
+	opacity: 0 ;
+	-webkit-transform: scale(0.5,0.5);
+	        transform: scale(0.5,0.5);
+}
+.u65935btn-three::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	
+	-webkit-transform: scale(1.2,1.2);
+	        transform: scale(1.2,1.2);
+    opacity: 0.4;
+}
+.u65935btn-three:hover::after {
+    border: 1px solid #0000FF;
+	opacity: 1;
+	-webkit-transform: scale(1,1);
+	        transform: scale(1,1);
+}
+.linkClass{
+text-decoration:none !important;
+}
+	
+</style>
+	
 <style>
 html, body {overflow-x: hidden !important;}   
    
@@ -160,59 +844,181 @@ html, body {overflow-x: hidden !important;}
  </head>
  <body>
 
-  <div class="breakpoint active" id="bp_infinity" data-min-width="1441"><!-- responsive breakpoint node -->
-   <div class="clearfix" id="page"><!-- column -->
-    <div class="position_content" id="page_position_content">
-     <div class="browser_width colelem" id="menuu16391-bw">
-      <nav class="MenuBar clearfix" id="menuu16391"><!-- horizontal box -->
-       <div class="MenuItemContainer borderbox clearfix grpelem" id="u16399"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem" id="u16400" href="index.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u16401-4"><!-- rasterized frame --><div id="u16401-4_clip"><img class="temp_no_img_src" alt="Home" width="226" data-orig-src="images/u16401-4.png?crc=4266465865" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-       <div class="MenuItemContainer borderbox clearfix grpelem" id="u16392"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem" id="u16393" href="education.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u16394-4"><!-- rasterized frame --><div id="u16394-4_clip"><img class="temp_no_img_src" alt="Education" width="227" data-orig-src="images/u16394-4.png?crc=81486677" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-       <div class="MenuItemContainer borderbox clearfix grpelem" id="u16511"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox clearfix colelem" id="u16512" href="safety.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u16514-4"><!-- rasterized frame --><div id="u16514-4_clip"><img class="temp_no_img_src" alt="Safety" width="227" data-orig-src="images/u16514-4.png?crc=4064490150" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-       <div class="MenuItemContainer borderbox clearfix grpelem" id="u16620"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem" id="u16623" href="transportation.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u16625-4"><!-- rasterized frame --><div id="u16625-4_clip"><img class="temp_no_img_src" alt="Transportation" width="227" data-orig-src="images/u16625-4.png?crc=135862320" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-       <div class="MenuItemContainer borderbox clearfix grpelem" id="u16718"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem" id="u16721" href="recreation.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u16722-4"><!-- rasterized frame --><div id="u16722-4_clip"><img class="temp_no_img_src" alt="Recreation" width="227" data-orig-src="images/u16722-4.png?crc=176630049" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-       <div class="MenuItemContainer borderbox clearfix grpelem" id="u16816"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem" id="u16817" href="utilities.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u16819-4"><!-- rasterized frame --><div id="u16819-4_clip"><img class="temp_no_img_src" alt="Utilities" width="227" data-orig-src="images/u16819-4.png?crc=434650784" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-       <div class="MenuItemContainer borderbox clearfix grpelem" id="u16914"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem" id="u16915" href="map.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u16917-4"><!-- rasterized frame --><div id="u16917-4_clip"><img class="temp_no_img_src" alt="Map" width="227" data-orig-src="images/u16917-4.png?crc=362852897" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-      </nav>
-     </div>
-     <div class="clearfix colelem" id="pu32402"><!-- group -->
-      <div class="browser_width grpelem" id="u32402-bw">
-       <div id="u32402"><!-- group -->
-        <div class="clearfix" id="u32402_align_to_page">
-         <div class="clip_frame grpelem" id="u33716"><!-- image -->
-          <img class="block temp_no_img_src" id="u33716_img" data-orig-src="images/safety-together.png?crc=148880808" alt="" width="600" height="600" src="images/blank.gif?crc=4208392903"/>
+  <div class="clearfix borderbox" id="page"><!-- column -->
+   <div class="position_content" id="page_position_content">
+    <div class="browser_width colelem" id="menuu16391-bw">
+     <nav class="MenuBar clearfix" id="menuu16391"><!-- horizontal box -->
+      <div class="MenuItemContainer borderbox clearfix grpelem" id="u16399"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem" id="u16400" href="index.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap borderbox clearfix grpelem" id="u16401-4"><!-- content --><p>Home</p></div></a>
+      </div>
+      <div class="MenuItemContainer borderbox clearfix grpelem" id="u16392"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem" id="u16393" href="education.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap borderbox clearfix grpelem" id="u16394-4"><!-- content --><p>Education</p></div></a>
+      </div>
+      <div class="MenuItemContainer borderbox clearfix grpelem" id="u16511"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox clearfix colelem" id="u16512" href="safety.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap borderbox clearfix grpelem" id="u16514-4"><!-- content --><p>Safety</p></div></a>
+      </div>
+      <div class="MenuItemContainer borderbox clearfix grpelem" id="u16620"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem" id="u16623" href="transportation.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap borderbox clearfix grpelem" id="u16625-4"><!-- content --><p>Transportation</p></div></a>
+      </div>
+      <div class="MenuItemContainer borderbox clearfix grpelem" id="u16718"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem" id="u16721" href="recreation.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap borderbox clearfix grpelem" id="u16722-4"><!-- content --><p>Recreation</p></div></a>
+      </div>
+      <div class="MenuItemContainer borderbox clearfix grpelem" id="u16816"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem" id="u16817" href="utilities.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap borderbox clearfix grpelem" id="u16819-4"><!-- content --><p>Utilities</p></div></a>
+      </div>
+     </nav>
+    </div>
+    <div class="clearfix colelem" id="pppu32402"><!-- group -->
+     <div class="clearfix grpelem" id="ppu32402"><!-- column -->
+      <div class="clearfix colelem" id="pu32402"><!-- group -->
+       <div class="browser_width grpelem" id="u32402-bw">
+        <div id="u32402"><!-- group -->
+         <div class="clearfix" id="u32402_align_to_page">
+          <div class="clearfix grpelem" id="u45348-22"><!-- content -->
+           <p id="u45348">&nbsp;</p>
+           <p id="u45348-3">Hollow Hills Safety Department</p>
+           <p id="u45348-4">&nbsp;</p>
+           <p id="u45348-6">Welcome to the</p>
+           <p id="u45348-8">Hollow Hills Safety Portal</p>
+           <p id="u45348-9">&nbsp;</p>
+           <p id="u45348-11">The Hollow Hills Safety Department consists of:</p>
+           <ul class="list0 nls-None" id="u45348-14">
+            <li id="u45348-13">Fire Department</li>
+           </ul>
+           <ul class="list0 nls-None" id="u45348-17">
+            <li id="u45348-16">Medical Department</li>
+           </ul>
+           <ul class="list0 nls-None" id="u45348-20">
+            <li id="u45348-19">Police Department</li>
+           </ul>
+          </div>
          </div>
         </div>
        </div>
+       <div class="grpelem" id="u32339"><!-- content -->
+        <div class="fluid_height_spacer"></div>
+       </div>
+       <div class="Left clip_frame grpelem" id="u33716"><!-- image -->
+        <img class="block" id="u33716_img" src="images/safety-together.png?crc=336742314" data-hidpi-src="images/safety-together_2x.png?crc=462736752" alt="" width="700" height="700"/>
+       </div>
       </div>
-      <div class="size_fixed grpelem shared_content" id="u27958" data-content-guid="u27958_content"><!-- custom html -->
-      </div>
-     </div>
-     <div class="clearfix colelem" id="pu25078"><!-- group -->
-      <div class="browser_width grpelem" id="u25078-bw">
-       <div id="u25078"><!-- group -->
-        <div class="clearfix" id="u25078_align_to_page">
-         <div class="clip_frame grpelem" id="u33650"><!-- image -->
-          <img class="block temp_no_img_src" id="u33650_img" data-orig-src="images/fire%20truck.png?crc=214406223" alt="" width="1027" height="600" src="images/blank.gif?crc=4208392903"/>
+      <div class="clearfix colelem" id="pu25078"><!-- group -->
+       <div class="browser_width grpelem" id="u25078-bw">
+        <div class="gradient" id="u25078"><!-- group -->
+         <div class="clearfix" id="u25078_align_to_page">
+          <div class="clearfix grpelem" id="u45369-22"><!-- content -->
+           <p id="u45369">&nbsp;</p>
+           <p id="u45369-3">Hollow Hills Fire Department</p>
+           <p id="u45369-4">&nbsp;</p>
+           <p id="u45369-6">The Hollow Hills Fire Department is a team of highly trained firefighters that will be of service 24/7. The team is extremely reliant and will help in almost any situation.</p>
+           <p id="u45369-7">&nbsp;</p>
+           <p id="u45369-8">&nbsp;</p>
+           <p id="u45369-10">Please refer to the HHFD main page for:</p>
+           <ul class="list0 nls-None" id="u45369-19">
+            <li id="u45369-12">Locations</li>
+            <li id="u45369-14">Qualifications</li>
+            <li id="u45369-16">Technology</li>
+            <li id="u45369-18">And Other information</li>
+           </ul>
+           <p id="u45369-20">&nbsp;</p>
+          </div>
+          <div class="size_fluid_width grpelem" id="u65314"><!-- custom html -->
+           
+
+<a class="linkClass" href="fire.html">
+  <div class="u65314btn u65314btn-one">
+    <span>Hollow Hills Fire Department</span>
+  </div>
+</a>
+ 
+
+          </div>
          </div>
         </div>
        </div>
+       <div class="grpelem" id="u32330"><!-- content -->
+        <div class="fluid_height_spacer"></div>
+       </div>
+       <div class="Right clip_frame grpelem" id="u33650"><!-- image -->
+        <img class="block" id="u33650_img" src="images/fire%20truck.png?crc=3815958777" alt="" width="1027" height="600"/>
+       </div>
       </div>
-      <div class="size_fixed grpelem shared_content" id="u26118" data-content-guid="u26118_content"><!-- custom html -->
-       
+     </div>
+     <div class="size_fixed grpelem" id="u84901"><!-- custom html -->
+     </div>
+     <div class="size_fixed grpelem" id="u84902"><!-- custom html -->
+     </div>
+    </div>
+    <div class="browser_width colelem" id="u32381-bw">
+     <div id="u32381"><!-- group -->
+      <div class="clearfix" id="u32381_align_to_page">
+       <div class="clearfix grpelem" id="pu33629"><!-- group -->
+        <div class="grpelem" id="u33629"><!-- content -->
+         <div class="fluid_height_spacer"></div>
+        </div>
+        <div class="Left clip_frame grpelem" id="u33658"><!-- image -->
+         <img class="block" id="u33658_img" src="images/medic.png?crc=4179551340" data-hidpi-src="images/medic_2x.png?crc=3935510326" alt="" width="700" height="700"/>
+        </div>
+       </div>
+       <a class="nonblock nontext clearfix grpelem" id="u45339-12" href="medical.html"><!-- content --><p id="u45339">&nbsp;</p><p id="u45339-3">Hollow Hills Health Department</p><p>&nbsp;</p><p id="u45339-6">Health Department covers many aspects of the health of Hollow Hills' residents and tourists.</p><p id="u45339-8">The Health Department also is proud to add the Willman Institute for Cancer Research to help aid the residence with all forms of cancer.</p><p id="u45339-10">WICR is looking for a cure, and its near.</p></a>
+       <div class="size_fluid_width grpelem" id="u65927"><!-- custom html -->
+        
+
+<a class="linkClass" href="#">
+  <div class="u65927btn u65927btn-one">
+    <span>Willman Institute</span>
+  </div>
+</a>
+ 
+
+       </div>
+       <div class="size_fluid_width grpelem" id="u65922"><!-- custom html -->
+        
+
+<a class="linkClass" href="medical.html">
+  <div class="u65922btn u65922btn-one">
+    <span>Hollow Hills Health Department</span>
+  </div>
+</a>
+ 
+
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="browser_width colelem" id="u26458-bw">
+     <div id="u26458"><!-- group -->
+      <div class="clearfix" id="u26458_align_to_page">
+       <div class="clearfix grpelem" id="u45390-10"><!-- content -->
+        <p id="u45390">&nbsp;</p>
+        <p id="u45390-3">Hollow Hills Police Department</p>
+        <p id="u45390-4">&nbsp;</p>
+        <p id="u45390-6"><span id="u45390-5">HHPD was created to perform task and measures to protect the citizens, residents and tourists in Hollow Hills. There are many programs associated with the HHPD to ensure a safe and secure Hollow Hills.</span></p>
+        <p id="u45390-8"><span id="u45390-7">The Hollow Hills army is supervised by the HHPD</span></p>
+       </div>
+       <div class="size_fluid_width grpelem" id="u65935"><!-- custom html -->
+        
+
+<a class="linkClass" href="police.html">
+  <div class="u65935btn u65935btn-one">
+    <span>Hollow Hills Police Department</span>
+  </div>
+</a>
+ 
+
+       </div>
+       <div class="grpelem" id="u33608"><!-- content -->
+        <div class="fluid_height_spacer"></div>
+       </div>
+       <div class="Right clip_frame grpelem" id="u33694"><!-- image -->
+        <img class="block" id="u33694_img" src="images/police%20car.png?crc=13157082" alt="" width="1142" height="600"/>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="verticalspacer" data-offset-top="3299" data-content-above-spacer="3299" data-content-below-spacer="0"></div>
+    <div class="size_fixed colelem" id="u26118"><!-- custom html -->
+     
  
 <!--
  
@@ -228,369 +1034,6 @@ html, body {overflow-x: hidden !important;}
 
 
 
-      </div>
-     </div>
-     <div class="clearfix colelem" id="u32381"><!-- group -->
-      <div class="clip_frame grpelem" id="u33658"><!-- image -->
-       <img class="block temp_no_img_src" id="u33658_img" data-orig-src="images/medic.png?crc=102838701" alt="" width="600" height="600" src="images/blank.gif?crc=4208392903"/>
-      </div>
-     </div>
-     <div class="browser_width colelem" id="u26458-bw">
-      <div id="u26458"><!-- group -->
-       <div class="clearfix" id="u26458_align_to_page">
-        <div class="clip_frame grpelem" id="u33694"><!-- image -->
-         <img class="block temp_no_img_src" id="u33694_img" data-orig-src="images/police%20car.png?crc=65659786" alt="" width="1142" height="600" src="images/blank.gif?crc=4208392903"/>
-        </div>
-       </div>
-      </div>
-     </div>
-     <div class="verticalspacer" data-offset-top="3260" data-content-above-spacer="3259" data-content-below-spacer="0"></div>
-    </div>
-   </div>
-  </div>
-  <div class="breakpoint" id="bp_1440" data-min-width="1281" data-max-width="1440"><!-- responsive breakpoint node -->
-   <div class="clearfix temp_no_id" data-orig-id="page"><!-- column -->
-    <div class="position_content temp_no_id" data-orig-id="page_position_content">
-     <div class="browser_width colelem temp_no_id" data-orig-id="menuu16391-bw">
-      <nav class="MenuBar clearfix temp_no_id" data-orig-id="menuu16391"><!-- horizontal box -->
-       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16399"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="index.html" data-orig-id="u16400"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16401-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16401-4_clip"><img class="temp_no_img_src" alt="Home" width="204" data-orig-src="images/u16401-4.png?crc=4266465865" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16392"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="education.html" data-orig-id="u16393"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16394-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16394-4_clip"><img class="temp_no_img_src" alt="Education" width="204" data-orig-src="images/u16394-4.png?crc=81486677" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16511"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox clearfix colelem temp_no_id" href="safety.html" data-orig-id="u16512"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16514-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16514-4_clip"><img class="temp_no_img_src" alt="Safety" width="204" data-orig-src="images/u16514-4.png?crc=4064490150" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16620"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="transportation.html" data-orig-id="u16623"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16625-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16625-4_clip"><img class="temp_no_img_src" alt="Transportation" width="204" data-orig-src="images/u16625-4.png?crc=135862320" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16718"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="recreation.html" data-orig-id="u16721"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16722-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16722-4_clip"><img class="temp_no_img_src" alt="Recreation" width="204" data-orig-src="images/u16722-4.png?crc=176630049" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16816"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="utilities.html" data-orig-id="u16817"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16819-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16819-4_clip"><img class="temp_no_img_src" alt="Utilities" width="204" data-orig-src="images/u16819-4.png?crc=434650784" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16914"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="map.html" data-orig-id="u16915"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16917-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16917-4_clip"><img class="temp_no_img_src" alt="Map" width="204" data-orig-src="images/u16917-4.png?crc=362852897" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-      </nav>
-     </div>
-     <div class="clearfix colelem temp_no_id shared_content" data-orig-id="pu32402" data-content-guid="pu32402_content"><!-- group -->
-      <div class="clearfix grpelem temp_no_id" data-orig-id="u32402"><!-- group -->
-       <div class="clip_frame grpelem temp_no_id" data-orig-id="u33716"><!-- image -->
-        <img class="block temp_no_id temp_no_img_src" data-orig-src="images/safety-together.png?crc=148880808" alt="" width="500" height="500" data-orig-id="u33716_img" src="images/blank.gif?crc=4208392903"/>
-       </div>
-      </div>
-      <span class="size_fixed grpelem placeholder" data-placeholder-for="u27958_content"><!-- placeholder node --></span>
-     </div>
-     <div class="clearfix colelem temp_no_id" data-orig-id="pu25078"><!-- group -->
-      <div class="clearfix grpelem temp_no_id shared_content" data-orig-id="u25078" data-content-guid="u25078_content"><!-- group -->
-       <div class="clip_frame grpelem temp_no_id" data-orig-id="u33650"><!-- image -->
-        <img class="block temp_no_id temp_no_img_src" data-orig-src="images/fire%20truck.png?crc=214406223" alt="" width="856" height="500" data-orig-id="u33650_img" src="images/blank.gif?crc=4208392903"/>
-       </div>
-      </div>
-      <span class="size_fixed grpelem placeholder" data-placeholder-for="u26118_content"><!-- placeholder node --></span>
-     </div>
-     <div class="clearfix colelem temp_no_id shared_content" data-orig-id="u32381" data-content-guid="u32381_content"><!-- group -->
-      <div class="clip_frame grpelem temp_no_id" data-orig-id="u33658"><!-- image -->
-       <img class="block temp_no_id temp_no_img_src" data-orig-src="images/medic.png?crc=102838701" alt="" width="500" height="500" data-orig-id="u33658_img" src="images/blank.gif?crc=4208392903"/>
-      </div>
-     </div>
-     <div class="clearfix colelem temp_no_id shared_content" data-orig-id="u26458" data-content-guid="u26458_content"><!-- group -->
-      <div class="clip_frame grpelem temp_no_id" data-orig-id="u33694"><!-- image -->
-       <img class="block temp_no_id temp_no_img_src" data-orig-src="images/police%20car.png?crc=65659786" alt="" width="952" height="500" data-orig-id="u33694_img" src="images/blank.gif?crc=4208392903"/>
-      </div>
-     </div>
-     <div class="verticalspacer" data-offset-top="2940" data-content-above-spacer="2940" data-content-below-spacer="0"></div>
-    </div>
-   </div>
-  </div>
-  <div class="breakpoint" id="bp_1280" data-min-width="1025" data-max-width="1280"><!-- responsive breakpoint node -->
-   <div class="clearfix temp_no_id" data-orig-id="page"><!-- column -->
-    <div class="position_content temp_no_id" data-orig-id="page_position_content">
-     <div class="browser_width colelem temp_no_id" data-orig-id="menuu16391-bw">
-      <nav class="MenuBar clearfix temp_no_id" data-orig-id="menuu16391"><!-- horizontal box -->
-       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16399"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="index.html" data-orig-id="u16400"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16401-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16401-4_clip"><img class="temp_no_img_src" alt="Home" width="181" data-orig-src="images/u16401-4.png?crc=4266465865" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16392"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="education.html" data-orig-id="u16393"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16394-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16394-4_clip"><img class="temp_no_img_src" alt="Education" width="181" data-orig-src="images/u16394-4.png?crc=81486677" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16511"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox clearfix colelem temp_no_id" href="safety.html" data-orig-id="u16512"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16514-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16514-4_clip"><img class="temp_no_img_src" alt="Safety" width="181" data-orig-src="images/u16514-4.png?crc=4064490150" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16620"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="transportation.html" data-orig-id="u16623"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16625-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16625-4_clip"><img class="temp_no_img_src" alt="Transportation" width="181" data-orig-src="images/u16625-4.png?crc=135862320" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16718"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="recreation.html" data-orig-id="u16721"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16722-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16722-4_clip"><img class="temp_no_img_src" alt="Recreation" width="181" data-orig-src="images/u16722-4.png?crc=176630049" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16816"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="utilities.html" data-orig-id="u16817"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16819-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16819-4_clip"><img class="temp_no_img_src" alt="Utilities" width="181" data-orig-src="images/u16819-4.png?crc=434650784" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16914"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="map.html" data-orig-id="u16915"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16917-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16917-4_clip"><img class="temp_no_img_src" alt="Map" width="182" data-orig-src="images/u16917-4.png?crc=362852897" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-      </nav>
-     </div>
-     <span class="clearfix colelem placeholder" data-placeholder-for="pu32402_content"><!-- placeholder node --></span>
-     <span class="clearfix colelem placeholder" data-placeholder-for="u25078_content"><!-- placeholder node --></span>
-     <span class="clearfix colelem placeholder" data-placeholder-for="u32381_content"><!-- placeholder node --></span>
-     <span class="clearfix colelem placeholder" data-placeholder-for="u26458_content"><!-- placeholder node --></span>
-     <div class="verticalspacer" data-offset-top="2620" data-content-above-spacer="2619" data-content-below-spacer="0"></div>
-    </div>
-   </div>
-  </div>
-  <div class="breakpoint" id="bp_1024" data-min-width="961" data-max-width="1024"><!-- responsive breakpoint node -->
-   <div class="clearfix temp_no_id" data-orig-id="page"><!-- column -->
-    <div class="position_content temp_no_id" data-orig-id="page_position_content">
-     <div class="browser_width colelem temp_no_id" data-orig-id="menuu16391-bw">
-      <nav class="MenuBar clearfix temp_no_id" data-orig-id="menuu16391"><!-- horizontal box -->
-       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16399"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="index.html" data-orig-id="u16400"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16401-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16401-4_clip"><img class="temp_no_img_src" alt="Home" width="144" data-orig-src="images/u16401-4.png?crc=4266465865" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16392"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="education.html" data-orig-id="u16393"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16394-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16394-4_clip"><img class="temp_no_img_src" alt="Education" width="144" data-orig-src="images/u16394-4.png?crc=81486677" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16511"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox clearfix colelem temp_no_id" href="safety.html" data-orig-id="u16512"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16514-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16514-4_clip"><img class="temp_no_img_src" alt="Safety" width="144" data-orig-src="images/u16514-4.png?crc=4064490150" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16620"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="transportation.html" data-orig-id="u16623"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16625-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16625-4_clip"><img class="temp_no_img_src" alt="Transportation" width="145" data-orig-src="images/u16625-4.png?crc=135862320" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16718"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="recreation.html" data-orig-id="u16721"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16722-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16722-4_clip"><img class="temp_no_img_src" alt="Recreation" width="145" data-orig-src="images/u16722-4.png?crc=176630049" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16816"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="utilities.html" data-orig-id="u16817"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16819-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16819-4_clip"><img class="temp_no_img_src" alt="Utilities" width="145" data-orig-src="images/u16819-4.png?crc=434650784" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16914"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="map.html" data-orig-id="u16915"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16917-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16917-4_clip"><img class="temp_no_img_src" alt="Map" width="145" data-orig-src="images/u16917-4.png?crc=362852897" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-      </nav>
-     </div>
-     <div class="clearfix colelem" id="pu27958"><!-- group -->
-      <span class="size_fixed grpelem placeholder" data-placeholder-for="u27958_content"><!-- placeholder node --></span>
-      <div class="clearfix grpelem temp_no_id" data-orig-id="u32381"><!-- group -->
-       <div class="clip_frame grpelem temp_no_id" data-orig-id="u33716"><!-- image -->
-        <img class="block temp_no_id temp_no_img_src" data-orig-src="images/safety-together.png?crc=148880808" alt="" width="450" height="450" data-orig-id="u33716_img" src="images/blank.gif?crc=4208392903"/>
-       </div>
-      </div>
-     </div>
-     <div class="clearfix colelem temp_no_id" data-orig-id="u26458"><!-- group -->
-      <div class="clip_frame grpelem temp_no_id shared_content" data-orig-id="u33650" data-content-guid="u33650_content"><!-- image -->
-       <img class="block temp_no_id temp_no_img_src" data-orig-src="images/fire%20truck685x400.png?crc=4262533688" alt="" width="685" height="400" data-orig-id="u33650_img" src="images/blank.gif?crc=4208392903"/>
-      </div>
-     </div>
-     <div class="clearfix colelem temp_no_id" data-orig-id="u32402"><!-- group -->
-      <div class="clip_frame grpelem temp_no_id" data-orig-id="u33658"><!-- image -->
-       <img class="block temp_no_id temp_no_img_src" data-orig-src="images/medic.png?crc=102838701" alt="" width="450" height="450" data-orig-id="u33658_img" src="images/blank.gif?crc=4208392903"/>
-      </div>
-     </div>
-     <div class="clearfix colelem temp_no_id" data-orig-id="u25078"><!-- group -->
-      <div class="clip_frame grpelem temp_no_id shared_content" data-orig-id="u33694" data-content-guid="u33694_content"><!-- image -->
-       <img class="block temp_no_id temp_no_img_src" data-orig-src="images/police%20car762x400.png?crc=4035233642" alt="" width="761" height="400" data-orig-id="u33694_img" src="images/blank.gif?crc=4208392903"/>
-      </div>
-     </div>
-     <div class="verticalspacer" data-offset-top="2108" data-content-above-spacer="2107" data-content-below-spacer="0"></div>
-    </div>
-   </div>
-  </div>
-  <div class="breakpoint" id="bp_960" data-min-width="841" data-max-width="960"><!-- responsive breakpoint node -->
-   <div class="clearfix temp_no_id" data-orig-id="page"><!-- column -->
-    <div class="position_content temp_no_id" data-orig-id="page_position_content">
-     <div class="clearfix colelem" id="pmenuu16391"><!-- group -->
-      <div class="browser_width grpelem temp_no_id" data-orig-id="menuu16391-bw">
-       <nav class="MenuBar clearfix temp_no_id" data-orig-id="menuu16391"><!-- horizontal box -->
-        <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16399"><!-- vertical box -->
-         <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="index.html" data-orig-id="u16400"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16401-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16401-4_clip"><img class="temp_no_img_src" alt="Home" width="135" data-orig-src="images/u16401-4.png?crc=4266465865" src="images/blank.gif?crc=4208392903"/></div></div></a>
-        </div>
-        <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16392"><!-- vertical box -->
-         <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="education.html" data-orig-id="u16393"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16394-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16394-4_clip"><img class="temp_no_img_src" alt="Education" width="135" data-orig-src="images/u16394-4.png?crc=81486677" src="images/blank.gif?crc=4208392903"/></div></div></a>
-        </div>
-        <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16511"><!-- vertical box -->
-         <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox clearfix colelem temp_no_id" href="safety.html" data-orig-id="u16512"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16514-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16514-4_clip"><img class="temp_no_img_src" alt="Safety" width="135" data-orig-src="images/u16514-4.png?crc=4064490150" src="images/blank.gif?crc=4208392903"/></div></div></a>
-        </div>
-        <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16620"><!-- vertical box -->
-         <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="transportation.html" data-orig-id="u16623"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16625-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16625-4_clip"><img class="temp_no_img_src" alt="Transportation" width="135" data-orig-src="images/u16625-4.png?crc=135862320" src="images/blank.gif?crc=4208392903"/></div></div></a>
-        </div>
-        <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16718"><!-- vertical box -->
-         <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="recreation.html" data-orig-id="u16721"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16722-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16722-4_clip"><img class="temp_no_img_src" alt="Recreation" width="136" data-orig-src="images/u16722-4.png?crc=176630049" src="images/blank.gif?crc=4208392903"/></div></div></a>
-        </div>
-        <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16816"><!-- vertical box -->
-         <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="utilities.html" data-orig-id="u16817"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16819-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16819-4_clip"><img class="temp_no_img_src" alt="Utilities" width="136" data-orig-src="images/u16819-4.png?crc=434650784" src="images/blank.gif?crc=4208392903"/></div></div></a>
-        </div>
-        <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16914"><!-- vertical box -->
-         <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="map.html" data-orig-id="u16915"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16917-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16917-4_clip"><img class="temp_no_img_src" alt="Map" width="136" data-orig-src="images/u16917-4.png?crc=362852897" src="images/blank.gif?crc=4208392903"/></div></div></a>
-        </div>
-       </nav>
-      </div>
-      <span class="size_fixed grpelem placeholder" data-placeholder-for="u27958_content"><!-- placeholder node --></span>
-     </div>
-     <div class="clearfix colelem temp_no_id" data-orig-id="u32402"><!-- group -->
-      <div class="clip_frame grpelem temp_no_id" data-orig-id="u33716"><!-- image -->
-       <img class="block temp_no_id temp_no_img_src" data-orig-src="images/safety-together400x400.png?crc=74256229" alt="" width="400" height="400" data-orig-id="u33716_img" src="images/blank.gif?crc=4208392903"/>
-      </div>
-     </div>
-     <div class="clearfix colelem temp_no_id" data-orig-id="u25078"><!-- group -->
-      <span class="clip_frame grpelem placeholder" data-placeholder-for="u33650_content"><!-- placeholder node --></span>
-     </div>
-     <div class="clearfix colelem temp_no_id" data-orig-id="u32381"><!-- group -->
-      <div class="clip_frame grpelem temp_no_id" data-orig-id="u33658"><!-- image -->
-       <img class="block temp_no_id temp_no_img_src" data-orig-src="images/medic400x400.png?crc=274322102" alt="" width="400" height="400" data-orig-id="u33658_img" src="images/blank.gif?crc=4208392903"/>
-      </div>
-     </div>
-     <div class="clearfix colelem temp_no_id" data-orig-id="u26458"><!-- group -->
-      <span class="clip_frame grpelem placeholder" data-placeholder-for="u33694_content"><!-- placeholder node --></span>
-     </div>
-     <div class="verticalspacer" data-offset-top="1980" data-content-above-spacer="1979" data-content-below-spacer="0"></div>
-    </div>
-   </div>
-  </div>
-  <div class="breakpoint" id="bp_840" data-min-width="721" data-max-width="840"><!-- responsive breakpoint node -->
-   <div class="clearfix temp_no_id" data-orig-id="page"><!-- column -->
-    <div class="position_content temp_no_id" data-orig-id="page_position_content">
-     <div class="browser_width colelem temp_no_id" data-orig-id="menuu16391-bw">
-      <nav class="MenuBar clearfix temp_no_id" data-orig-id="menuu16391"><!-- horizontal box -->
-       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16399"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="index.html" data-orig-id="u16400"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16401-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16401-4_clip"><img class="temp_no_img_src" alt="Home" width="118" data-orig-src="images/u16401-4.png?crc=4266465865" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16392"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="education.html" data-orig-id="u16393"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16394-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16394-4_clip"><img class="temp_no_img_src" alt="Education" width="118" data-orig-src="images/u16394-4.png?crc=81486677" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16511"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox clearfix colelem temp_no_id" href="safety.html" data-orig-id="u16512"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16514-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16514-4_clip"><img class="temp_no_img_src" alt="Safety" width="118" data-orig-src="images/u16514-4.png?crc=4064490150" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16620"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="transportation.html" data-orig-id="u16623"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16625-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16625-4_clip"><img class="temp_no_img_src" alt="Transportation" width="118" data-orig-src="images/u16625-4.png?crc=135862320" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16718"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="recreation.html" data-orig-id="u16721"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16722-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16722-4_clip"><img class="temp_no_img_src" alt="Recreation" width="118" data-orig-src="images/u16722-4.png?crc=176630049" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16816"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="utilities.html" data-orig-id="u16817"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16819-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16819-4_clip"><img class="temp_no_img_src" alt="Utilities" width="119" data-orig-src="images/u16819-4.png?crc=434650784" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16914"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="map.html" data-orig-id="u16915"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16917-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16917-4_clip"><img class="temp_no_img_src" alt="Map" width="119" data-orig-src="images/u16917-4.png?crc=362852897" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-      </nav>
-     </div>
-     <div class="clearfix colelem" id="pu32381"><!-- group -->
-      <div class="clearfix grpelem temp_no_id" data-orig-id="u32381"><!-- group -->
-       <div class="clip_frame grpelem temp_no_id" data-orig-id="u33716"><!-- image -->
-        <img class="block temp_no_id temp_no_img_src" data-orig-src="images/safety-together350x350.png?crc=342646040" alt="" width="350" height="350" data-orig-id="u33716_img" src="images/blank.gif?crc=4208392903"/>
-       </div>
-      </div>
-      <span class="size_fixed grpelem placeholder" data-placeholder-for="u27958_content"><!-- placeholder node --></span>
-     </div>
-     <div class="clearfix colelem temp_no_id" data-orig-id="u26458"><!-- group -->
-      <div class="clip_frame grpelem temp_no_id" data-orig-id="u33650"><!-- image -->
-       <img class="block temp_no_id temp_no_img_src" data-orig-src="images/fire%20truck600x350.png?crc=4231952683" alt="" width="599" height="350" data-orig-id="u33650_img" src="images/blank.gif?crc=4208392903"/>
-      </div>
-     </div>
-     <div class="clearfix colelem temp_no_id" data-orig-id="u32402"><!-- group -->
-      <div class="clip_frame grpelem temp_no_id" data-orig-id="u33658"><!-- image -->
-       <img class="block temp_no_id temp_no_img_src" data-orig-src="images/medic350x350.png?crc=3950320287" alt="" width="350" height="350" data-orig-id="u33658_img" src="images/blank.gif?crc=4208392903"/>
-      </div>
-     </div>
-     <div class="clearfix colelem temp_no_id" data-orig-id="u25078"><!-- group -->
-      <div class="clip_frame grpelem temp_no_id" data-orig-id="u33694"><!-- image -->
-       <img class="block temp_no_id temp_no_img_src" data-orig-src="images/police%20car667x350.png?crc=3960219134" alt="" width="666" height="350" data-orig-id="u33694_img" src="images/blank.gif?crc=4208392903"/>
-      </div>
-     </div>
-     <div class="verticalspacer" data-offset-top="1720" data-content-above-spacer="1720" data-content-below-spacer="0"></div>
-    </div>
-   </div>
-  </div>
-  <div class="breakpoint" id="bp_720" data-min-width="601" data-max-width="720"><!-- responsive breakpoint node -->
-   <div class="clearfix temp_no_id" data-orig-id="page"><!-- column -->
-    <div class="position_content temp_no_id" data-orig-id="page_position_content">
-     <div class="browser_width colelem temp_no_id" data-orig-id="menuu16391-bw">
-      <nav class="MenuBar clearfix temp_no_id" data-orig-id="menuu16391"><!-- horizontal box -->
-       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16399"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="index.html" data-orig-id="u16400"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16401-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16401-4_clip"><img class="temp_no_img_src" alt="Home" width="101" data-orig-src="images/u16401-4.png?crc=4266465865" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16392"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="education.html" data-orig-id="u16393"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16394-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16394-4_clip"><img class="temp_no_img_src" alt="Education" width="101" data-orig-src="images/u16394-4.png?crc=81486677" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16511"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox clearfix colelem temp_no_id" href="safety.html" data-orig-id="u16512"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16514-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16514-4_clip"><img class="temp_no_img_src" alt="Safety" width="101" data-orig-src="images/u16514-4.png?crc=4064490150" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16620"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="transportation.html" data-orig-id="u16623"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16625-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16625-4_clip"><img class="temp_no_img_src" alt="Transportation" width="101" data-orig-src="images/u16625-4.png?crc=135862320" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16718"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="recreation.html" data-orig-id="u16721"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16722-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16722-4_clip"><img class="temp_no_img_src" alt="Recreation" width="101" data-orig-src="images/u16722-4.png?crc=176630049" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16816"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="utilities.html" data-orig-id="u16817"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16819-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16819-4_clip"><img class="temp_no_img_src" alt="Utilities" width="101" data-orig-src="images/u16819-4.png?crc=434650784" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16914"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="map.html" data-orig-id="u16915"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16917-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16917-4_clip"><img class="temp_no_img_src" alt="Map" width="102" data-orig-src="images/u16917-4.png?crc=362852897" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-      </nav>
-     </div>
-     <div class="clearfix colelem temp_no_id shared_content" data-orig-id="pu27958" data-content-guid="pu27958_content"><!-- group -->
-      <span class="size_fixed grpelem placeholder" data-placeholder-for="u27958_content"><!-- placeholder node --></span>
-      <div class="clearfix grpelem temp_no_id" data-orig-id="u32381"><!-- group -->
-       <div class="clip_frame grpelem temp_no_id" data-orig-id="u33716"><!-- image -->
-        <img class="block temp_no_id temp_no_img_src" data-orig-src="images/safety-together325x325.png?crc=221064760" alt="" width="325" height="325" data-orig-id="u33716_img" src="images/blank.gif?crc=4208392903"/>
-       </div>
-      </div>
-     </div>
-     <div class="clearfix colelem temp_no_id shared_content" data-orig-id="u25078" data-content-guid="u25078_content1"><!-- group -->
-      <div class="clip_frame grpelem temp_no_id" data-orig-id="u33650"><!-- image -->
-       <img class="block temp_no_id temp_no_img_src" data-orig-src="images/fire%20truck557x325.png?crc=4280182093" alt="" width="556" height="325" data-orig-id="u33650_img" src="images/blank.gif?crc=4208392903"/>
-      </div>
-     </div>
-     <div class="clearfix colelem temp_no_id shared_content" data-orig-id="u32402" data-content-guid="u32402_content"><!-- group -->
-      <div class="clip_frame grpelem temp_no_id" data-orig-id="u33658"><!-- image -->
-       <img class="block temp_no_id temp_no_img_src" data-orig-src="images/medic325x325.png?crc=4284542859" alt="" width="325" height="325" data-orig-id="u33658_img" src="images/blank.gif?crc=4208392903"/>
-      </div>
-     </div>
-     <div class="clearfix colelem temp_no_id shared_content" data-orig-id="u26458" data-content-guid="u26458_content1"><!-- group -->
-      <div class="clip_frame grpelem temp_no_id" data-orig-id="u33694"><!-- image -->
-       <img class="block temp_no_id temp_no_img_src" data-orig-src="images/police%20car619x325.png?crc=434461309" alt="" width="619" height="325" data-orig-id="u33694_img" src="images/blank.gif?crc=4208392903"/>
-      </div>
-     </div>
-     <div class="verticalspacer shared_content" data-offset-top="1475" data-content-above-spacer="1474" data-content-below-spacer="0" data-content-guid="page_position_content_5_content"></div>
-    </div>
-   </div>
-  </div>
-  <div class="breakpoint" id="bp_600" data-max-width="600"><!-- responsive breakpoint node -->
-   <div class="clearfix temp_no_id" data-orig-id="page"><!-- column -->
-    <div class="position_content temp_no_id" data-orig-id="page_position_content">
-     <div class="browser_width colelem temp_no_id" data-orig-id="menuu16391-bw">
-      <nav class="MenuBar clearfix temp_no_id" data-orig-id="menuu16391"><!-- horizontal box -->
-       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16399"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="index.html" data-orig-id="u16400"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16401-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16401-4_clip"><img class="temp_no_img_src" alt="Home" width="84" data-orig-src="images/u16401-4.png?crc=4266465865" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16392"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="education.html" data-orig-id="u16393"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16394-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16394-4_clip"><img class="temp_no_img_src" alt="Education" width="84" data-orig-src="images/u16394-4.png?crc=81486677" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16511"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox clearfix colelem temp_no_id" href="safety.html" data-orig-id="u16512"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16514-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16514-4_clip"><img class="temp_no_img_src" alt="Safety" width="84" data-orig-src="images/u16514-4.png?crc=4064490150" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16620"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="transportation.html" data-orig-id="u16623"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16625-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16625-4_clip"><img class="temp_no_img_src" alt="Transportation" width="84" data-orig-src="images/u16625-4.png?crc=135862320" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16718"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="recreation.html" data-orig-id="u16721"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16722-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16722-4_clip"><img class="temp_no_img_src" alt="Recreation" width="84" data-orig-src="images/u16722-4.png?crc=176630049" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16816"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="utilities.html" data-orig-id="u16817"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16819-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16819-4_clip"><img class="temp_no_img_src" alt="Utilities" width="84" data-orig-src="images/u16819-4.png?crc=434650784" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u16914"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem temp_no_id" href="map.html" data-orig-id="u16915"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u16917-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u16917-4_clip"><img class="temp_no_img_src" alt="Map" width="84" data-orig-src="images/u16917-4.png?crc=362852897" src="images/blank.gif?crc=4208392903"/></div></div></a>
-       </div>
-      </nav>
-     </div>
-     <span class="clearfix colelem placeholder" data-placeholder-for="pu27958_content"><!-- placeholder node --></span>
-     <span class="clearfix colelem placeholder" data-placeholder-for="u25078_content1"><!-- placeholder node --></span>
-     <span class="clearfix colelem placeholder" data-placeholder-for="u32402_content"><!-- placeholder node --></span>
-     <span class="clearfix colelem placeholder" data-placeholder-for="u26458_content1"><!-- placeholder node --></span>
-     <span class="verticalspacer placeholder" data-placeholder-for="page_position_content_5_content"><!-- placeholder node --></span>
     </div>
    </div>
   </div>
@@ -607,30 +1050,56 @@ html, body {overflow-x: hidden !important;}
 16);return 0},g=function(g){for(var f=document.getElementsByTagName("link"),h=0;h<f.length;h++)if("text/css"==f[h].type){var i=(f[h].href||"").match(/\/?css\/([\w\-]+\.css)\?crc=(\d+)/);if(!i||!i[1]||!i[2])break;b[i[1]]=i[2]}f=document.createElement("div");f.className="version";f.style.cssText="display:none; width:1px; height:1px;";document.getElementsByTagName("body")[0].appendChild(f);for(h=0;h<Muse.assets.required.length;){var i=Muse.assets.required[h],l=i.match(/([\w\-\.]+)\.(\w+)$/),k=l&&l[1]?
 l[1]:null,l=l&&l[2]?l[2]:null;switch(l.toLowerCase()){case "css":k=k.replace(/\W/gi,"_").replace(/^([^a-z])/gi,"_$1");f.className+=" "+k;k=a(c(f,"color"));l=a(c(f,"backgroundColor"));k!=0||l!=0?(Muse.assets.required.splice(h,1),"undefined"!=typeof b[i]&&(k!=b[i]>>>24||l!=(b[i]&16777215))&&Muse.assets.outOfDate.push(i)):h++;f.className="version";break;case "js":h++;break;default:throw Error("Unsupported file type: "+l);}}d?d().jquery!="1.8.3"&&Muse.assets.outOfDate.push("jquery-1.8.3.min.js"):Muse.assets.required.push("jquery-1.8.3.min.js");
 f.parentNode.removeChild(f);if(Muse.assets.outOfDate.length||Muse.assets.required.length)f="Some files on the server may be missing or incorrect. Clear browser cache and try again. If the problem persists please contact website author.",g&&Muse.assets.outOfDate.length&&(f+="\nOut of date: "+Muse.assets.outOfDate.join(",")),g&&Muse.assets.required.length&&(f+="\nMissing: "+Muse.assets.required.join(",")),alert(f)};location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi)?setTimeout(function(){g(!0)},5E3):g()}};
-var muse_init=function(){require.config({baseUrl:""});require(["jquery","museutils","whatinput","jquery.musemenu","jquery.watch","jquery.museresponsive"],function(d){var $ = d;$(document).ready(function(){try{
+var muse_init=function(){require.config({baseUrl:""});require(["jquery","museutils","whatinput","jquery.musemenu","jquery.watch"],function(d){var $ = d;$(document).ready(function(){try{
 window.Muse.assets.check($);/* body */
 Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
+Muse.Utils.detectScreenResolution();/* HiDPI screens */
 Muse.Utils.prepHyperlinks(true);/* body */
 Muse.Utils.resizeHeight('.browser_width');/* resize height */
 Muse.Utils.requestAnimationFrame(function() { $('body').addClass('initialized'); });/* mark body as initialized */
 Muse.Utils.fullPage('#page');/* 100% height page */
-Muse.Utils.initWidget('.MenuBar', ['#bp_infinity', '#bp_1440', '#bp_1280', '#bp_1024', '#bp_960', '#bp_840', '#bp_720', '#bp_600'], function(elem) { return $(elem).museMenu(); });/* unifiedNavBar */
-$( '.breakpoint' ).registerBreakpoint();/* Register breakpoints */
+Muse.Utils.initWidget('.MenuBar', ['#bp_infinity'], function(elem) { return $(elem).museMenu(); });/* unifiedNavBar */
+Muse.Utils.showWidgetsWhenReady();/* body */
 Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
 }catch(b){if(b&&"function"==typeof b.notify?b.notify():Muse.Assert.fail("Error calling selector function: "+b),false)throw b;}})})};
 
 </script>
   <!-- RequireJS script -->
-  <script src="scripts/require.js?crc=4159430777" type="text/javascript" async data-main="scripts/museconfig.js?crc=4179431180" onload="if (requirejs) requirejs.onError = function(requireType, requireModule) { if (requireType && requireType.toString && requireType.toString().indexOf && 0 <= requireType.toString().indexOf('#scripterror')) window.Muse.assets.check(); }" onerror="window.Muse.assets.check();"></script>
+  <script src="scripts/require.js?crc=4234670167" type="text/javascript" async data-main="scripts/museconfig.js?crc=4152223963" onload="if (requirejs) requirejs.onError = function(requireType, requireModule) { if (requireType && requireType.toString && requireType.toString().indexOf && 0 <= requireType.toString().indexOf('#scripterror')) window.Muse.assets.check(); }" onerror="window.Muse.assets.check();"></script>
   
   <!--HTML Widget code-->
-  	
-		<script>
-		$( "#botonlogin" ).click(function(e) {
-		  if ($("#pass").val() == 'Dmytr0123') { e.preventDefault(); $('#overlaypass').hide(); $('.formLogin').hide(); }
-		  else  { e.preventDefault(); $('#err').replaceWith("<span id='err'>WRONG PASSWORD, TRY AGAIN</span>"); } 
-		});
-		</script>
+  
+<script>
+
+</script>
+	
+<style>
+.animated {
+transform-origin: center center;
+}
+</style>
+
+<script>
+$('.Right').addClass('wow fadeInRight');
+</script>
+
+<script>
+new WOW().init();
+</script>
+
+<style>
+.animated {
+transform-origin: center center;
+}
+</style>
+
+<script>
+$('.Left').addClass('wow fadeInLeft');
+</script>
+
+<script>
+new WOW().init();
+</script>
 
 
 
